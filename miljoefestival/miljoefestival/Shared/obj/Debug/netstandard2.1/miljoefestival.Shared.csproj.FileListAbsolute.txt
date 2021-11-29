@@ -1,0 +1,10 @@
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/bin/Debug/netstandard2.1/miljoefestival.Shared.deps.json
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/bin/Debug/netstandard2.1/miljoefestival.Shared.dll
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/bin/Debug/netstandard2.1/miljoefestival.Shared.pdb
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.csproj.AssemblyReference.cache
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.AssemblyInfoInputs.cache
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.AssemblyInfo.cs
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.csproj.CoreCompileInputs.cache
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.dll
+/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/Debug/netstandard2.1/miljoefestival.Shared.pdb
