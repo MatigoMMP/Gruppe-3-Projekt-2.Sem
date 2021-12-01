@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{F2E2F5D3-C5A0-43B9-897D-07BD46E2F70B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/wwwroot/css/app.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/OmOs.razor">
     <Files>
-      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="40" Column="44" />
-      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="12" Column="7" />
-      <File FileName="miljoefestival/Client/Shared/MainLayout.razor" Line="10" Column="70" />
-      <File FileName="miljoefestival/Client/Pages/EditUser.razor" Line="44" Column="16" />
-      <File FileName="miljoefestival/Client/wwwroot/css/app.css" Line="4" Column="64" />
+      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="47" Column="79" />
+      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="43" Column="43" />
+      <File FileName="miljoefestival/Client/Pages/Artister.razor" Line="1" Column="18" />
+      <File FileName="miljoefestival/Client/Pages/Mad.razor" Line="2" Column="1" />
+      <File FileName="miljoefestival/Client/Pages/Overnatning.razor" Line="2" Column="1" />
+      <File FileName="miljoefestival/Client/Pages/OmOs.razor" Line="1" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="miljoefestival" expanded="True">
             <Node name="miljoefestival.Client" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="OmOs.razor" selected="True" />
+              </Node>
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="app.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
+                <Node name="images" expanded="True" />
               </Node>
             </Node>
             <Node name="miljoefestival.Server" expanded="True">

@@ -11,7 +11,6 @@ namespace miljoefestival.Client.Pages
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using System.Net.Http;
@@ -75,6 +74,20 @@ using miljoefestival.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Pages/Index.razor"
+using Microsoft.AspNetCore.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Pages/Index.razor"
+using Microsoft.Extensions.Logging;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +96,40 @@ using miljoefestival.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 19 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Pages/Index.razor"
+       
+    
+    private void Artist()
+    {
+        NavigationManager.NavigateTo("artister");
+    }
+
+    private void Mad()
+    {
+        NavigationManager.NavigateTo("mad");
+    }
+
+    private void Frivillig()
+    {
+        NavigationManager.NavigateTo("frivillig");
+    }
+
+    private void Overnatning()
+    {
+        NavigationManager.NavigateTo("overnatning");
+    }
+
+    private void Om_os()
+    {
+        NavigationManager.NavigateTo("omOs");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

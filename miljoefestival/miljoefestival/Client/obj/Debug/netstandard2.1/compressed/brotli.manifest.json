@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/eRhyNF-7-EerEEDNZDAb0CYdShhzNl2PnwpePJZc9vY=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/_FCNGOqfQpb92e21LkMCLB8B-YeqGcjJ3W_AvCvyZVg=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/miljoefestival.Client.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/miljoefestival.Client.dll.br"
     },
@@ -191,7 +191,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/Cr-4nB-EFcReiMME4GC71NdsMWMfzlMIiRrUH7R9v7A=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
+      "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
+      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.br"
+    },
+    {
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/14BmBVh1hDwW2k1s-Ktz1pvm4OMj5NwLhQQ4Ul9pQKY=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/miljoefestival.Shared.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/miljoefestival.Shared.dll.br"
     },
@@ -316,22 +321,17 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
-      "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.dll",
-      "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.br"
-    },
-    {
       "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/_iXMu3PMqov1kY9PquXKaOdf7QmW3mNaF0ZLYvbEhZ0=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/pdJPfIc-fcpz123eO8wCEi8F-YSNsKnrYeCfbRPUC0k=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/miljoefestival.Client.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/miljoefestival.Client.pdb.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/nGBdcHWd6i-0j3RCi90wBzjG8fHdzZTRG0Eg4O1Z9Ck=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/B5DoEuNlfk4cMtjKq_cJXczJY7D0BIhaq7BajxYSggI=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/unlinked\/miljoefestival.Shared.pdb",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/_bin\/miljoefestival.Shared.pdb.br"
     },
@@ -356,12 +356,12 @@
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/ybhOj4MrELZaOF46JgL-Mj0QLZXBY0XB29s8NDbDoxU=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/AXeIKaYkb0GoQvit7IMnbGqUamI5iv2AVfP3zMV3B6o=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/blazor.boot.json",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/n_wJQh82vucFmZVIybMIGrhzvcaYbizL3n67ZDRK2rY=.hash",
+      "InputSource": "obj\/Debug\/netstandard2.1\/integrity\/T3D_vHz7rjPi_SkFhtbtjwUK2a4TjyeW8gxz55QWXlw=.hash",
       "Source": "\/Users\/jisoo\/Documents\/GitHub\/Gruppe-3-Projekt-2.Sem\/miljoefestival\/miljoefestival\/Client\/obj\/Debug\/netstandard2.1\/blazor\/service-worker-assets.js",
       "Target": "obj\/Debug\/netstandard2.1\/compressed\/service-worker-assets.js.br"
     }

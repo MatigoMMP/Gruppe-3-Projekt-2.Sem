@@ -83,7 +83,7 @@ using miljoefestival.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Shared/NavMenu.razor"
+#line 53 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

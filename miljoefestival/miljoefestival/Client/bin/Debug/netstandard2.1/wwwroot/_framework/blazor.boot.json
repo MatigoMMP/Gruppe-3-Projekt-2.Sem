@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "miljoefestival.Client.dll": "sha256-eRhyNF\/7\/EerEEDNZDAb0CYdShhzNl2PnwpePJZc9vY=",
+      "miljoefestival.Client.dll": "sha256-+FCNGOqfQpb92e21LkMCLB8B\/YeqGcjJ3W+AvCvyZVg=",
       "System.Text.Json.dll": "sha256-HQeN+ZfHAERO+uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -44,7 +44,8 @@
       "System.ComponentModel.DataAnnotations.dll": "sha256-LIfCYwg+PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-9UNtwDMFW86VtnTtJFk9xcc1hCnXFGXccFv3SkbgYy0=",
-      "miljoefestival.Shared.dll": "sha256-Cr\/4nB\/EFcReiMME4GC71NdsMWMfzlMIiRrUH7R9v7A=",
+      "Microsoft.JSInterop.dll": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
+      "miljoefestival.Shared.dll": "sha256-14BmBVh1hDwW2k1s\/Ktz1pvm4OMj5NwLhQQ4Ul9pQKY=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-FJ+rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-Uf1GmMwsvPJxnmQY4q\/9oLZtqC\/IDOdSjdR1ac\/uCwU=",
       "Microsoft.Extensions.Primitives.dll": "sha256-+ndfoM+E5BiPTTXbGE3QqnnebiwNAoBsTciG+3+cHUA=",
@@ -69,12 +70,11 @@
       "System.Resources.ResourceManager.dll": "sha256-U4q43ZeuBEBaCygKJwr18fjDYwnFv22MHuvMVqnpNzI=",
       "System.Runtime.dll": "sha256-6CpyRQAYrVPJfNYBKH0K9lWX+rNPO15lwNhGHPmvxtk=",
       "Microsoft.Extensions.Options.dll": "sha256-XMbWzSbWz38yBXaSo6e8kAgk2oM6rEjZoZYJBkMR37Q=",
-      "Microsoft.JSInterop.dll": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "miljoefestival.Client.pdb": "sha256-+iXMu3PMqov1kY9PquXKaOdf7QmW3mNaF0ZLYvbEhZ0=",
-      "miljoefestival.Shared.pdb": "sha256-nGBdcHWd6i\/0j3RCi90wBzjG8fHdzZTRG0Eg4O1Z9Ck="
+      "miljoefestival.Client.pdb": "sha256-pdJPfIc\/fcpz123eO8wCEi8F\/YSNsKnrYeCfbRPUC0k=",
+      "miljoefestival.Shared.pdb": "sha256-B5DoEuNlfk4cMtjKq+cJXczJY7D0BIhaq7BajxYSggI="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
