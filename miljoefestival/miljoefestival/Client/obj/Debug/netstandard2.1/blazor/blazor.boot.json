@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "miljoefestival.Client.dll": "sha256-vFsgaa0Mn\/tysrTCOFzlt6VGmEkI0ogUsxt8vhA\/3lA=",
+      "miljoefestival.Client.dll": "sha256-eRhyNF\/7\/EerEEDNZDAb0CYdShhzNl2PnwpePJZc9vY=",
       "System.Text.Json.dll": "sha256-HQeN+ZfHAERO+uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -73,7 +73,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "miljoefestival.Client.pdb": "sha256-b0YbAdSBQKQZgD6nq+RJtszUlmINOxeP4ySXyF71pIQ=",
+      "miljoefestival.Client.pdb": "sha256-+iXMu3PMqov1kY9PquXKaOdf7QmW3mNaF0ZLYvbEhZ0=",
       "miljoefestival.Shared.pdb": "sha256-nGBdcHWd6i\/0j3RCi90wBzjG8fHdzZTRG0Eg4O1Z9Ck="
     },
     "runtime": {

@@ -188,11 +188,12 @@ app {
     grid-template-columns: 70% 15% 15%;
     background-color: lightgreen;
     padding: 10px;
+
 }
 
 .header_container2 {
     display: grid;
-    grid-template-columns: 20% auto auto;
+    grid-template-columns: auto auto auto;
     background-color: transparent;
     padding: 10px;
 }
@@ -206,6 +207,10 @@ app {
     text-align: center;
     padding: 10px;
     line-height: 500%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 24px;
 }
 
 .header_container3 {
@@ -273,9 +278,14 @@ app {
 
 .body_text {
     color: white;
-    font-size: 40px;
     padding: 10px;
     margin-top: auto;
+    font-family: "Geomanist", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.4;
+    display: inline-block;
 }
 
 .body_button {

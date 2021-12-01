@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{F2E2F5D3-C5A0-43B9-897D-07BD46E2F70B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Shared/MainLayout.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/wwwroot/css/app.css">
     <Files>
-      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="17" Column="76" />
-      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="46" Column="69" />
-      <File FileName="miljoefestival/Client/Shared/MainLayout.razor" Line="8" Column="17" />
-      <File FileName="miljoefestival/Client/wwwroot/css/app.css" Line="175" Column="22" />
+      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="40" Column="44" />
+      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="12" Column="7" />
+      <File FileName="miljoefestival/Client/Shared/MainLayout.razor" Line="10" Column="70" />
+      <File FileName="miljoefestival/Client/Pages/EditUser.razor" Line="44" Column="16" />
+      <File FileName="miljoefestival/Client/wwwroot/css/app.css" Line="4" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
