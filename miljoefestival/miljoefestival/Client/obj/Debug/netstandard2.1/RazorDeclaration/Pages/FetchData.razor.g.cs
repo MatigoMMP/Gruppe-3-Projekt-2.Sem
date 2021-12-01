@@ -13,70 +13,70 @@ namespace miljoefestival.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 1 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 2 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 3 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 4 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 5 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 6 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 7 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 8 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using miljoefestival.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/_Imports.razor"
+#line 9 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/_Imports.razor"
 using miljoefestival.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/Pages/FetchData.razor"
+#line 2 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Pages/FetchData.razor"
 using miljoefestival.Shared;
 
 #line default
@@ -91,7 +91,7 @@ using miljoefestival.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/Pages/FetchData.razor"
+#line 38 "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/Pages/FetchData.razor"
        
     private WeatherForecast[] forecasts;
 

@@ -25,7 +25,7 @@ namespace miljoefestival.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var sqlConnectionString = "Server=miljoefest.postgres.database.azure.com;Database=festival;Port=5432;User Id=victorp;Password=cedrob-mahru5-nymkId;Ssl Mode=Require;";
+            var sqlConnectionString = "Server=miljoefest.postgres.database.azure.com;Database=festival;Port=5432;User Id=victorp;Password=zajpIb-meqtom-gerwi5;Ssl Mode=Require;";
 
             services.AddDbContext<DomainModelPostgreSqlContext>(options => options.UseNpgsql(sqlConnectionString));
 

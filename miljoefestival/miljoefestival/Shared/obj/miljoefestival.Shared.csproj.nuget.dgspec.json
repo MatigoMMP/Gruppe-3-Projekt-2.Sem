@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {}
+    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {}
   },
   "projects": {
-    "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {
+    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj",
+        "projectUniqueName": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj",
         "projectName": "miljoefestival.Shared",
-        "projectPath": "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj",
+        "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj",
         "packagesPath": "/Users/victorpascale/.nuget/packages/",
-        "outputPath": "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Shared/obj/",
+        "outputPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/victorpascale/.config/NuGet/NuGet.Config"

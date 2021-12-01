@@ -23,13 +23,16 @@ else
         <tbody>
             @foreach (var user in userList)
             {
-                <tr>
-                    <td>@user.fornavn</td>
-                    <td>@user.efternavn</td>
-                    <td>@user.foedselsdato.ToShortDateString()</td>
-                    <td>@user.email</td>
-                    <td>@user.username</td>
-                </tr>
+            <tr>
+                <td>@user.fornavn</td>
+                <td>@user.efternavn</td>
+                <td>@user.foedselsdato.ToShortDateString()</td>
+                <td>@user.email</td>
+                <td>@user.username</td>
+                <td>
+                    <a href="/edituser/@user.bruger_id">Edit</a>
+                </td>
+            </tr>
             }
         </tbody>
     </table>

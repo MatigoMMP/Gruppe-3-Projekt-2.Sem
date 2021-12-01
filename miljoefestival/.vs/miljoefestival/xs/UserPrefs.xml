@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{F2E2F5D3-C5A0-43B9-897D-07BD46E2F70B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/Index.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/EditUser.razor">
     <Files>
       <File FileName="miljoefestival/Shared/Models/IDataAccessProvider.cs" Line="10" Column="37" />
-      <File FileName="miljoefestival/Server/DataAccess/DomainModelPostgreSqlContext.cs" Line="9" Column="10" />
-      <File FileName="miljoefestival/Server/DataAccess/DataAccessPostgreSqlProvider.cs" Line="31" Column="41" />
-      <File FileName="miljoefestival/Server/Controllers/UserController.cs" Line="33" Column="50" />
-      <File FileName="miljoefestival/Server/Startup.cs" Line="28" Column="103" />
-      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="25" Column="10" />
-      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="31" Column="44" />
-      <File FileName="miljoefestival/Shared/Models/User.cs" Line="17" Column="42" />
+      <File FileName="miljoefestival/Server/DataAccess/DomainModelPostgreSqlContext.cs" Line="22" Column="1" />
+      <File FileName="miljoefestival/Server/DataAccess/DataAccessPostgreSqlProvider.cs" Line="45" Column="1" />
+      <File FileName="miljoefestival/Server/Controllers/UserController.cs" />
+      <File FileName="miljoefestival/Server/Startup.cs" Line="28" Column="179" />
+      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" />
+      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="36" Column="14" />
+      <File FileName="miljoefestival/Shared/Models/User.cs" Line="1" Column="1" />
+      <File FileName="miljoefestival/Client/Pages/EditUser.razor" Line="56" Column="58" />
+      <File FileName="../../../../Projects/miljoefestival/miljoefestival/Client/Pages/Index.razor" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +18,7 @@
           <Node name="miljoefestival" expanded="True">
             <Node name="miljoefestival.Client" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="Index.razor" selected="True" />
+                <Node name="EditUser.razor" selected="True" />
               </Node>
               <Node name="Shared" expanded="True" />
             </Node>
@@ -29,9 +31,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

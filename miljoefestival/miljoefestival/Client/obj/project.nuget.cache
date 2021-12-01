@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HYfdJq5Gw5ffdHKGhnTQGPfHoMYxCgBd6YkErmJBLNAvehWmLckw90d7vJlQJVVwUiZIVJH+cze9Gd1eGJ3OCQ==",
+  "dgSpecHash": "eFeL8COWiyfKgQeZv0S3E+aRi2fmNSIJicio+jLY1tcZlXH2O5be16K+DkU+GDErihC0yoc0UEopq5ej0eDViA==",
   "success": true,
-  "projectFilePath": "/Users/victorpascale/Projects/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj",
+  "projectFilePath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj",
   "expectedPackageFiles": [
     "/Users/victorpascale/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/victorpascale/.nuget/packages/microsoft.aspnetcore.authorization/3.1.6/microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
