@@ -1,26 +1,23 @@
 ﻿<Properties StartupConfiguration="{F2E2F5D3-C5A0-43B9-897D-07BD46E2F70B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/EditUser.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Shared/MainLayout.razor">
     <Files>
-      <File FileName="miljoefestival/Shared/Models/IDataAccessProvider.cs" Line="10" Column="37" />
-      <File FileName="miljoefestival/Server/DataAccess/DomainModelPostgreSqlContext.cs" Line="22" Column="1" />
-      <File FileName="miljoefestival/Server/DataAccess/DataAccessPostgreSqlProvider.cs" Line="45" Column="1" />
-      <File FileName="miljoefestival/Server/Controllers/UserController.cs" />
-      <File FileName="miljoefestival/Server/Startup.cs" Line="28" Column="179" />
-      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" />
-      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="36" Column="14" />
-      <File FileName="miljoefestival/Shared/Models/User.cs" Line="1" Column="1" />
-      <File FileName="miljoefestival/Client/Pages/EditUser.razor" Line="56" Column="58" />
-      <File FileName="../../../../Projects/miljoefestival/miljoefestival/Client/Pages/Index.razor" Line="1" Column="1" />
+      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="17" Column="76" />
+      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="46" Column="69" />
+      <File FileName="miljoefestival/Client/Shared/MainLayout.razor" Line="8" Column="17" />
+      <File FileName="miljoefestival/Client/wwwroot/css/app.css" Line="175" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="miljoefestival" expanded="True">
             <Node name="miljoefestival.Client" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="EditUser.razor" selected="True" />
-              </Node>
+              <Node name="Pages" expanded="True" />
               <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="app.css" selected="True" />
+                </Node>
+              </Node>
             </Node>
             <Node name="miljoefestival.Server" expanded="True">
               <Node name="Controllers" expanded="True" />
@@ -35,7 +32,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.miljoefestival.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.miljoefestival.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -181,3 +181,145 @@ app {
         display: block;
     }
 }
+/********************************************/
+/*                HEADER layout             */
+.header_container {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.header_container2 {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.header_container2_itemlogo {
+    width: 100%;
+    height: auto;
+}
+
+.header_container2_itemtext {
+    text-align: center;
+    padding: 10px;
+    line-height: 500%;
+}
+
+.header_container3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header_button {
+    background-color: whitesmoke;
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0%;
+    transition-duration: all 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .header_button:hover {
+        background-color: green;
+        color: white;
+    }
+
+    .header_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 1s;
+    }
+
+        .header_button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .header_button:hover span {
+        padding-right: 25px;
+        color: white;
+    }
+
+        .header_button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+/********************************************/
+
+/********************************************/
+/*                BODY layput               */
+.body_container {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: darkslategrey;
+    padding: 10px;
+    text-align: center;
+    background-image: url(images/bodyBackground.svg);
+    background-size: 100% auto;
+}
+
+.body_text {
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.body_button {
+    background-color: transparent;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    transition-duration: all 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .body_button:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+
+    .body_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 1s;
+    }
+
+        .body_button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .body_button:hover span {
+        padding-right: 50px;
+        color: black;
+    }
+
+        .body_button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+/********************************************/
