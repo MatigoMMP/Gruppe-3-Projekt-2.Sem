@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{F2E2F5D3-C5A0-43B9-897D-07BD46E2F70B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/OmOs.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="miljoefestival/Client/Pages/Index.razor">
     <Files>
-      <File FileName="miljoefestival/Client/Shared/NavMenu.razor" Line="47" Column="79" />
-      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="43" Column="43" />
+      <File FileName="miljoefestival/Client/Pages/Index.razor" Line="27" Column="6" />
       <File FileName="miljoefestival/Client/Pages/Artister.razor" Line="1" Column="18" />
       <File FileName="miljoefestival/Client/Pages/Mad.razor" Line="2" Column="1" />
       <File FileName="miljoefestival/Client/Pages/Overnatning.razor" Line="2" Column="1" />
-      <File FileName="miljoefestival/Client/Pages/OmOs.razor" Line="1" Column="6" />
+      <File FileName="miljoefestival/Client/Pages/OmOs.razor" Line="2" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +13,7 @@
           <Node name="miljoefestival" expanded="True">
             <Node name="miljoefestival.Client" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="OmOs.razor" selected="True" />
+                <Node name="Index.razor" selected="True" />
               </Node>
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
