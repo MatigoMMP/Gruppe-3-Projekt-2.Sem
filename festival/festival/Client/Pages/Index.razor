@@ -1,0 +1,114 @@
+﻿@page "/"
+@using festival.Models
+@inject HttpClient Http
+
+<h1>Volunteers</h1>
+
+@if (employees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in employees)
+            {
+            <tr>
+                <td>@employee.First_name</td>
+                <td>@employee.Last_name</td>
+                <td>@employee.Age</td>
+                <td>@employee.Email</td>
+                <td>@employee.Username</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" @onclick="@(() => GetUser(@employee.Id))">Edit</button>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteUser(@employee.Id))">Delete</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<h4>Submit volunteer</h4>
+
+<form>
+    <div class="form-group">
+        <label>First name</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.First_name" />
+    </div>
+    <div class="form-group">
+        <label>Last name</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.Last_name" />
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.Age" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.Email" />
+    </div>
+    <div class="form-group">
+        <label>Username</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.Username" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input class="form-control col-sm-3" @bind="newEmployee.Password" />
+    </div>
+    <button class="btn btn-primary" @onclick="SubmitUser">Submit</button>
+</form>
+
+@code {
+    private List<Employee> employees;
+
+    private Employee newEmployee = new Employee();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<List<Employee>>("Employees");
+    }
+
+    private async Task GetUser(string id)
+    {
+        newEmployee = await Http.GetFromJsonAsync<Employee>("Employees/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitUser()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Employee>("Employees", newEmployee);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Employee>("Employees/" + newEmployee.Id, newEmployee);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeleteUser(string id)
+    {
+        await Http.DeleteAsync("Employees/" + id);
+        await OnInitializedAsync();
+    }
+}

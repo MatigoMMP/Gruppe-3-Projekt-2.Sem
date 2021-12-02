@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{60B7E9B7-1470-417F-B900-C4143446ABFF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="festival/Client/Pages/Index.razor">
+    <Files>
+      <File FileName="festival/Client/Pages/Index.razor" Line="45" Column="1" />
+      <File FileName="festival/Client/Services/EmployeeService.cs" />
+      <File FileName="festival/Server/Controllers/EmployeesController.cs" />
+      <File FileName="festival/Client/Models/FestDatabaseSettings.cs" />
+      <File FileName="festival/Server/Startup.cs" />
+      <File FileName="festival/Client/Models/Employees.cs" Line="28" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="festival" expanded="True">
+            <Node name="festival.Client" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="festival.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.festival.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
