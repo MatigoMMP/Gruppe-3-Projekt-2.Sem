@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-CLMwCdXSHqGZJPkmVzrW5AzX0GqL2ZMFG0ZMmKJhCxs=",
+      "hash": "sha256-C26tq0wTjI\/R9RmwOVUp5LUtsP6+nrUncU\/ZZA+nX30=",
       "url": "css\/app.css"
     },
     {
@@ -57,6 +57,18 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-6BGlKiiUM32rGi7Z0KsSv1o7e6uxlw44HNBQgfJ5N5k=",
+      "url": "images\/bodyBackground.svg"
+    },
+    {
+      "hash": "sha256-jokwRvh2HVF1iYcjzznqISuD2sqEA1QQx4nc\/KxOLsg=",
+      "url": "images\/logo.png"
+    },
+    {
+      "hash": "sha256-d0yCrjWZhbBJDWG7XxxWhyAPbUsnFQ8PQvoI6YWjMAo=",
+      "url": "images\/logo1.png"
+    },
+    {
       "hash": "sha256-cgoKzttE5lIU1mHx1UcKBIRXi53pBXXR5Xks0GW4agM=",
       "url": "index.html"
     },
@@ -65,7 +77,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-vFsgaa0Mn\/tysrTCOFzlt6VGmEkI0ogUsxt8vhA\/3lA=",
+      "hash": "sha256-+FCNGOqfQpb92e21LkMCLB8B\/YeqGcjJ3W+AvCvyZVg=",
       "url": "_framework\/_bin\/miljoefestival.Client.dll"
     },
     {
@@ -217,7 +229,11 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-Cr\/4nB\/EFcReiMME4GC71NdsMWMfzlMIiRrUH7R9v7A=",
+      "hash": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
+      "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
+    },
+    {
+      "hash": "sha256-14BmBVh1hDwW2k1s\/Ktz1pvm4OMj5NwLhQQ4Ul9pQKY=",
       "url": "_framework\/_bin\/miljoefestival.Shared.dll"
     },
     {
@@ -317,19 +333,15 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Options.dll"
     },
     {
-      "hash": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
-      "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
-    },
-    {
       "hash": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs=",
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-b0YbAdSBQKQZgD6nq+RJtszUlmINOxeP4ySXyF71pIQ=",
+      "hash": "sha256-pdJPfIc\/fcpz123eO8wCEi8F\/YSNsKnrYeCfbRPUC0k=",
       "url": "_framework\/_bin\/miljoefestival.Client.pdb"
     },
     {
-      "hash": "sha256-nGBdcHWd6i\/0j3RCi90wBzjG8fHdzZTRG0Eg4O1Z9Ck=",
+      "hash": "sha256-B5DoEuNlfk4cMtjKq+cJXczJY7D0BIhaq7BajxYSggI=",
       "url": "_framework\/_bin\/miljoefestival.Shared.pdb"
     },
     {
@@ -349,9 +361,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-v5HbRB1xMHEYplV7vNqr2ZbR4sN8O2afySRtQJ9KDHg=",
+      "hash": "sha256-AXeIKaYkb0GoQvit7IMnbGqUamI5iv2AVfP3zMV3B6o=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "aRWDMwVH"
+  "version": "XTSl3jw1"
 };

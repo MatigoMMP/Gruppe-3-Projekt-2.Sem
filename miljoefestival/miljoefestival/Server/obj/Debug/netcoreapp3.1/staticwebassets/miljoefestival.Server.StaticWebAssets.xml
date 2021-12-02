@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/bin/Debug/netstandard2.1/wwwroot/" />
-  <ContentRoot BasePath="/" Path="/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/bin/Debug/netstandard2.1/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/wwwroot/" />
 </StaticWebAssets>

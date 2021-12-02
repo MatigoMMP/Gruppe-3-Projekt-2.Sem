@@ -31,4 +31,7 @@
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\frivillig.razor" />
+  </ItemGroup>
 </Project>

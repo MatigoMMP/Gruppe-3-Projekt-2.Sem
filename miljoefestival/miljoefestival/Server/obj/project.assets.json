@@ -1584,19 +1584,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/victorpascale/.nuget/packages/": {}
+    "/Users/jisoo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/miljoefestival.Server.csproj",
+      "projectUniqueName": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/miljoefestival.Server.csproj",
       "projectName": "miljoefestival.Server",
-      "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/miljoefestival.Server.csproj",
-      "packagesPath": "/Users/victorpascale/.nuget/packages/",
-      "outputPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/obj/",
+      "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/miljoefestival.Server.csproj",
+      "packagesPath": "/Users/jisoo/.nuget/packages/",
+      "outputPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/victorpascale/.config/NuGet/NuGet.Config"
+        "/Users/jisoo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1608,11 +1608,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj": {
-              "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj"
+            "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj": {
+              "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Client/miljoefestival.Client.csproj"
             },
-            "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {
-              "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj"
+            "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj": {
+              "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/miljoefestival/miljoefestival/Shared/miljoefestival.Shared.csproj"
             }
           }
         }

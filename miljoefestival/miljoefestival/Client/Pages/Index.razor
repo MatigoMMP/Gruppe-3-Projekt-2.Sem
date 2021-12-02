@@ -1,50 +1,45 @@
 ﻿@page "/"
-@using miljoefestival.Shared.Models;
-@inject HttpClient Http
+@using Microsoft.AspNetCore.Components
+@using Microsoft.Extensions.Logging
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
-<h1>Users</h1>
+<div class="body_container">
+    <div class="body_text">
+        <button class="body_button"><span>MILJØ 2022 </span></button>
+    </div>
 
-@if (userList == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Fornavn</th>
-                <th>Efternavn</th>
-                <th>Fødselsdato</th>
-                <th>E-mail</th>
-                <th>Username</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in userList)
-            {
-            <tr>
-                <td>@user.fornavn</td>
-                <td>@user.efternavn</td>
-                <td>@user.foedselsdato.ToShortDateString()</td>
-                <td>@user.email</td>
-                <td>@user.username</td>
-                <td>
-                    <a href="/edituser/@user.bruger_id">Edit</a>
-                </td>
-            </tr>
-            }
-        </tbody>
-    </table>
-}
+    <div class="body_text"> <button class="body_button" @onclick="Artist"><span>Artister </span></button> </div>
+    <div class="body_text"> <button class="body_button" @onclick="Mad"><span>Mad </span></button> </div>
+    <div class="body_text"> <button class="body_button" @onclick="Frivillig"><span>Frivillig </span></button> </div>
+    <div class="body_text"> <button class="body_button" @onclick="Overnatning"><span>Overnatning </span></button> </div>
+    <div class="body_text"> <button class="body_button" @onclick="Om_os"><span>Om Miljø fest </span></button> </div>
+</div>
 
 @code {
-    private User[] userList;
-
-    protected override async Task OnInitializedAsync()
+    
+    private void Artist()
     {
-        userList = await Http.GetFromJsonAsync<User[]>("api/User/Get");
+        NavigationManager.NavigateTo("artister");
     }
 
-}
+    private void Mad()
+    {
+        NavigationManager.NavigateTo("mad");
+    }
 
+    private void Frivillig()
+    {
+        NavigationManager.NavigateTo("frivillig");
+    }
+
+    private void Overnatning()
+    {
+        NavigationManager.NavigateTo("overnatning");
+    }
+
+    private void Om_os()
+    {
+        NavigationManager.NavigateTo("omOs");
+    }
+}

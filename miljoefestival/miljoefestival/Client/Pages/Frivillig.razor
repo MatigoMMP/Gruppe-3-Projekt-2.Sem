@@ -1,0 +1,50 @@
+﻿@page "/frivillig"
+@using miljoefestival.Shared.Models;
+@inject HttpClient Http
+
+<h1>Users</h1>
+
+@if (userList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Fornavn</th>
+                <th>Efternavn</th>
+                <th>Fødselsdato</th>
+                <th>E-mail</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in userList)
+            {
+                <tr>
+                    <td>@user.fornavn</td>
+                    <td>@user.efternavn</td>
+                    <td>@user.foedselsdato.ToShortDateString()</td>
+                    <td>@user.email</td>
+                    <td>@user.username</td>
+                    <td>
+                        <a href="/edituser/@user.bruger_id">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private User[] userList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        userList = await Http.GetFromJsonAsync<User[]>("api/User/Get");
+    }
+
+}
+
