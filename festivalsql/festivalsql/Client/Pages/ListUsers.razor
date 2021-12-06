@@ -1,0 +1,110 @@
+﻿@page "/listusers"
+@using festivalsql.Shared.Models;
+@inject HttpClient Http
+
+<h1>Users</h1>
+
+@if (users == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.fornavn</td>
+                    <td>@user.efternavn</td>
+                    <td>@user.foedselsdato.ToShortDateString()</td>
+                    <td>@user.email</td>
+                    <td>@user.username</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary" @onclick="@(() => GetUser(@user.bruger_id))">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteUser(@user.bruger_id))">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<h4>Submit user</h4>
+
+<form>
+    <div class="form-group">
+        <label>First name</label>
+        <input class="form-control col-sm-3" @bind="newUser.fornavn" />
+    </div>
+    <div class="form-group">
+        <label>Last name</label>
+        <input class="form-control col-sm-3" @bind="newUser.efternavn" />
+    </div>
+    <div class="form-group">
+        <label>Date of birth</label>
+        <input type="date" class="form-control col-sm-3" @bind="newUser.foedselsdato" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control col-sm-3" @bind="newUser.email" />
+    </div>
+    <div class="form-group">
+        <label>Username</label>
+        <input class="form-control col-sm-3" @bind="newUser.username" />
+    </div>
+    <button class="btn btn-primary" @onclick="SubmitUser">Submit</button>
+</form>
+
+@code {
+    private List<User> users;
+
+    private User newUser = new User();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await Http.GetFromJsonAsync<List<User>>("api/user");
+    }
+
+    private async Task GetUser(int id)
+    {
+        newUser = await Http.GetFromJsonAsync<User>("api/user/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitUser()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<User>("api/user/create", newUser);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<User>("api/user/edit", newUser);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeleteUser(int id)
+    {
+        await Http.DeleteAsync("api/user/delete" + id);
+        await OnInitializedAsync();
+    }
+}

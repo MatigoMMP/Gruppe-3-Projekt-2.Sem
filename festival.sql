@@ -29,8 +29,15 @@ CREATE TABLE bruger (
     rolle_id smallint REFERENCES rolle (rolle_id),
     aktiv boolean DEFAULT true,
     email varchar(50) NOT NULL,
-    username varchar(50),
+    username varchar(50) UNIQUE,
     pswhash varchar(255),
+    last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE opgavedetalje (
+    opgavedetalje_id bigserial PRIMARY KEY,
+    opgavedetalje varchar(50),
+    beskrivelse text,
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -40,17 +47,17 @@ CREATE TABLE placering (
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE opgave_status (
+CREATE TABLE status (
     status_id serial PRIMARY KEY,
-    beskrivelse varchar(50),
+    status varchar(50),
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE opgave (
     opgave_id bigserial PRIMARY KEY,
-    beskrivelse varchar(50),
+    opgavedetalje_id int REFERENCES opgavedetalje (opgavedetalje_id),
     placering_id int REFERENCES placering (placering_id),
-    status_id smallint REFERENCES opgave_status (status_id),
+    status_id smallint REFERENCES status (status_id),
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -61,6 +68,11 @@ CREATE TABLE vagt (
     opgave_id int REFERENCES opgave (opgave_id),
     bruger_id int REFERENCES bruger (bruger_id),
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE event_type (
+    event_id serial PRIMARY KEY,
+    navn varchar(50) NOT NULL
 );
 
 CREATE TABLE audit_log (
@@ -146,19 +158,25 @@ CREATE TRIGGER last_updated
 
 CREATE TRIGGER last_updated
     BEFORE UPDATE 
+    ON public.opgavedetalje
+    FOR EACH ROW
+    EXECUTE FUNCTION public.last_updated();
+
+CREATE TRIGGER last_updated
+    BEFORE UPDATE 
     ON public.placering
     FOR EACH ROW
     EXECUTE FUNCTION public.last_updated();
 
 CREATE TRIGGER last_updated
     BEFORE UPDATE 
-    ON public.opgave
+    ON public.status
     FOR EACH ROW
     EXECUTE FUNCTION public.last_updated();
 
 CREATE TRIGGER last_updated
     BEFORE UPDATE 
-    ON public.opgave_status
+    ON public.opgave
     FOR EACH ROW
     EXECUTE FUNCTION public.last_updated();
 
@@ -194,26 +212,32 @@ VALUES  ('Jacob', 'Wolter', '2000-01-01', 2, 1, 'eaajwg@students.eaaa.dk', 'jaco
         ('Jesper', 'Møller', '2000-01-01', 4, 1, 'eaahjvn@students.eaaa.dk', 'jesperm', crypt('jespersKodeord', gen_salt('bf'))),
         ('Victor', 'Pascale', '2000-01-01', 1, 2, 'eaavap@students.eaaa.dk', 'victorp', crypt('victorsKodeord', gen_salt('bf')));
 
+INSERT INTO opgavedetalje (opgavedetalje)
+VALUES  ('servicepersonale'),
+        ('salg af drikkevarer'),
+        ('crowd safety'),
+        ('rengøring');
+
 INSERT INTO placering (placering)
 VALUES  ('Campingområde A'),
         ('Campingområde B'),
         ('Scene A'),
         ('Scene B');
 
-INSERT INTO opgave_status (beskrivelse)
+INSERT INTO status (status)
 VALUES  ('i planlægning'),
         ('i udførelse'),
         ('udført');
 
-INSERT INTO opgave (beskrivelse, placering_id, status_id)
-VALUES  ('servicepersonale', 1, 1),
-        ('servicepersonale', 2, 1),
-        ('salg af drikkevarer', 1, 1),
-        ('salg af drikkevarer', 2, 1),
-        ('crowd safety', 3, 1),
-        ('crowd safety', 4, 1),
-        ('rengøring', 1, 1),
-        ('rengøring', 2, 1);
+INSERT INTO opgave (opgavedetalje_id, placering_id, status_id)
+VALUES  (1, 1, 1),
+        (1, 2, 1),
+        (2, 1, 1),
+        (2, 2, 1),
+        (3, 3, 1),
+        (3, 4, 1),
+        (4, 1, 1),
+        (4, 2, 1);
 
 INSERT INTO vagt (starttid, sluttid, opgave_id)
 VALUES  ('2022-02-20 08:00:00', '2022-02-20 15:00:00', 1),
@@ -233,13 +257,26 @@ END;
 $$;
 
 CREATE OR REPLACE VIEW ledige_vagter AS
-    SELECT vagt_id starttid, sluttid, opgave.beskrivelse AS opgave, placering
+    SELECT vagt_id, starttid, sluttid, opgavedetalje, placering
     FROM vagt JOIN opgave
     ON vagt.opgave_id = opgave.opgave_id
     JOIN placering
     ON opgave.placering_id = placering.placering_id
+    JOIN opgavedetalje
+    ON opgave.opgavedetalje_id = opgavedetalje.opgavedetalje_id
     FULL JOIN bruger
     ON bruger.bruger_id = vagt.bruger_id
     WHERE vagt_id IS NOT NULL AND fornavn IS NULL;
    
-SELECT * FROM ledige_vagter;
+-- SELECT * FROM ledige_vagter;
+
+INSERT INTO event_type (navn)
+VALUES  ('insert'),
+        ('update'),
+        ('delete'),
+        ('truncate');
+
+CREATE OR REPLACE VIEW audit_bruger_data AS
+    SELECT log_id, navn, bruger, timestamp
+    FROM audit_log JOIN event_type
+    ON audit_log.event_type = event_type.event_id;
