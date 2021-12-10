@@ -427,8 +427,6 @@
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.MvcApplicationPartsAssemblyInfo.cache
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.RazorComponent.input.cache
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
-/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Counter.razor.g.cs
-/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListUsers.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs
@@ -441,8 +439,6 @@
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.TagHelpers.output.cache
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.RazorCoreGenerate.cache
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/App.razor.g.cs
-/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/Counter.razor.g.cs
-/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/FetchData.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListUsers.razor.g.cs
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs
@@ -667,3 +663,7 @@
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.pdb
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/serviceworkers/wwwroot/service-worker.js
 /Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/service-worker-assets.js
+/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListJobs.razor.g.cs
+/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListShifts.razor.g.cs
+/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListJobs.razor.g.cs
+/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListShifts.razor.g.cs

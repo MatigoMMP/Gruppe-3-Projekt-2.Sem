@@ -66,13 +66,13 @@ CREATE TABLE vagt (
     starttid timestamp with time zone NOT NULL,
     sluttid timestamp with time zone NOT NULL,
     opgave_id int REFERENCES opgave (opgave_id),
-    bruger_id int REFERENCES bruger (bruger_id),
+    bruger_id int REFERENCES bruger (bruger_id) DEFAULT 1,
     last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE event_type (
     event_id serial PRIMARY KEY,
-    navn varchar(50) NOT NULL
+    event_type varchar(50) NOT NULL
 );
 
 CREATE TABLE audit_log (
@@ -186,6 +186,12 @@ CREATE TRIGGER last_updated
     FOR EACH ROW
     EXECUTE FUNCTION public.last_updated();
 
+INSERT INTO event_type (event_type)
+VALUES  ('insert'),
+        ('update'),
+        ('delete'),
+        ('truncate');
+
 INSERT INTO by (by)
 VALUES  ('Aarhus'),
         ('Skanderborg'),
@@ -207,7 +213,8 @@ VALUES  ('Frivillig'),
 CREATE EXTENSION pgcrypto;
 
 INSERT INTO bruger (fornavn, efternavn, foedselsdato, adresse_id, rolle_id, email, username, pswhash)
-VALUES  ('Jacob', 'Wolter', '2000-01-01', 2, 1, 'eaajwg@students.eaaa.dk', 'jacobw', crypt('jacobsKodeord', gen_salt('bf'))),
+VALUES  ('Test', 'Test', '2000-02-02', 1, 1, '', '',''),
+        ('Jacob', 'Wolter', '2000-01-01', 2, 1, 'eaajwg@students.eaaa.dk', 'jacobw', crypt('jacobsKodeord', gen_salt('bf'))),
         ('Martin', 'Pham', '2000-01-01', 3, 1, 'eaammph@students.eaaa.dk', 'martinp', crypt('martinsKodeord', gen_salt('bf'))),
         ('Jesper', 'Møller', '2000-01-01', 4, 1, 'eaahjvn@students.eaaa.dk', 'jesperm', crypt('jespersKodeord', gen_salt('bf'))),
         ('Victor', 'Pascale', '2000-01-01', 1, 2, 'eaavap@students.eaaa.dk', 'victorp', crypt('victorsKodeord', gen_salt('bf')));
@@ -267,16 +274,8 @@ CREATE OR REPLACE VIEW ledige_vagter AS
     FULL JOIN bruger
     ON bruger.bruger_id = vagt.bruger_id
     WHERE vagt_id IS NOT NULL AND fornavn IS NULL;
-   
--- SELECT * FROM ledige_vagter;
-
-INSERT INTO event_type (navn)
-VALUES  ('insert'),
-        ('update'),
-        ('delete'),
-        ('truncate');
 
 CREATE OR REPLACE VIEW audit_bruger_data AS
-    SELECT log_id, navn, bruger, timestamp
+    SELECT log_id, event_type.event_type, bruger, timestamp
     FROM audit_log JOIN event_type
     ON audit_log.event_type = event_type.event_id;

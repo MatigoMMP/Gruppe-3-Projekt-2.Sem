@@ -82,8 +82,15 @@ using festivalsql.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/Pages/ListShifts.razor"
+using festivalsql.Shared.Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/listshifts")]
+    public partial class ListShifts : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,18 +98,50 @@ using festivalsql.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/Pages/Counter.razor"
+#line 66 "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/Pages/ListShifts.razor"
        
-    private int currentCount = 0;
+    private List<Shift> shifts;
 
-    private void IncrementCount()
+    private Shift newShift = new Shift();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        shifts = await Http.GetFromJsonAsync<List<Shift>>("api/shift");
+    }
+
+    private async Task GetShift(int id)
+    {
+        newShift = await Http.GetFromJsonAsync<Shift>("api/shift/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitShift()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Shift>("api/shift/create", newShift);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Shift>("api/shift/edit", newShift);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeleteShift(int id)
+    {
+        await Http.DeleteAsync("api/shift/delete" + id);
+        await OnInitializedAsync();
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
