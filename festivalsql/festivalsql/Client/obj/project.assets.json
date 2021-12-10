@@ -143,7 +143,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.12": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -498,6 +498,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "compile": {
@@ -650,7 +651,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.12": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -1005,6 +1006,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "compile": {
@@ -1281,17 +1283,17 @@
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.12": {
-      "sha512": "MTxvfKtEeQN5E5fBJO/jNfBdcKqw///Pro4uI2o0q8ukMaLsff4TgC8cfPBtzkz6wh55z0b4kldUv2r34Ix3sg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.0": {
+      "sha512": "BqWBL05PUDKwPwLeQCJdc2R4cIUycXV9UmuSjYfux2fcgyet8I2eYnOWlA7NgsDwRVcxW26vxvNQ0wuc8UAcLA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.12",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.12.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1970,6 +1972,7 @@
     "net5.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.12",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.12",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10",
       "System.Net.Http.Json >= 5.0.0",
@@ -1977,19 +1980,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/victorpascale/.nuget/packages/": {}
+    "/Users/jisoo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/festivalsql.Client.csproj",
+      "projectUniqueName": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql/festivalsql/Client/festivalsql.Client.csproj",
       "projectName": "festivalsql.Client",
-      "projectPath": "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/festivalsql.Client.csproj",
-      "packagesPath": "/Users/victorpascale/.nuget/packages/",
-      "outputPath": "/Users/victorpascale/Projects/festivalsql/festivalsql/Client/obj/",
+      "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql/festivalsql/Client/festivalsql.Client.csproj",
+      "packagesPath": "/Users/jisoo/.nuget/packages/",
+      "outputPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql/festivalsql/Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/victorpascale/.config/NuGet/NuGet.Config"
+        "/Users/jisoo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2001,8 +2004,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/victorpascale/Projects/festivalsql/festivalsql/Shared/festivalsql.Shared.csproj": {
-              "projectPath": "/Users/victorpascale/Projects/festivalsql/festivalsql/Shared/festivalsql.Shared.csproj"
+            "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql/festivalsql/Shared/festivalsql.Shared.csproj": {
+              "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql/festivalsql/Shared/festivalsql.Shared.csproj"
             }
           }
         }
@@ -2025,6 +2028,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.12, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -2062,7 +2069,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

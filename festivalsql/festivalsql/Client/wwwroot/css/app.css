@@ -14,8 +14,95 @@ a, .btn-link {
     border-color: #1861ac;
 }
 
+app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    flex: 1;
+}
+
+    .main .top-row {
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #d6d5d5;
+        justify-content: flex-end;
+    }
+
+        .main .top-row > a, .main .top-row .btn-link {
+            white-space: nowrap;
+            margin-left: 1.5rem;
+        }
+
+.main .top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+    .sidebar .top-row {
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .sidebar .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .sidebar .oi {
+        width: 2rem;
+        font-size: 1.1rem;
+        vertical-align: text-top;
+        top: -2px;
+    }
+
+    .sidebar .nav-item {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+    }
+
+        .sidebar .nav-item:first-of-type {
+            padding-top: 1rem;
+        }
+
+        .sidebar .nav-item:last-of-type {
+            padding-bottom: 1rem;
+        }
+
+        .sidebar .nav-item a {
+            color: #d7d7d7;
+            border-radius: 4px;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            line-height: 3rem;
+        }
+
+            .sidebar .nav-item a.active {
+                background-color: rgba(255,255,255,0.25);
+                color: white;
+            }
+
+            .sidebar .nav-item a:hover {
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+
 .content {
     padding-top: 1.1rem;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -42,9 +129,576 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .main .top-row:not(.auth) {
+        display: none;
+    }
+
+    .main .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .main .top-row a, .main .top-row .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    app {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .main .top-row {
+        position: sticky;
+        top: 0;
+    }
+
+    .main > div {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .sidebar .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+/********************************************/
+/*         FRONT PAGE HEADER layout         */
+/********************************************/
+.header_container {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    background-color: lightgreen;
+    padding: 10px;
+
+}
+
+.header_container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.header_container2_itemlogo {
+    width: 100%;
+    height: auto;
+}
+
+.header_container2_itemtext {
+    text-align: center;
+    padding: 10px;
+    line-height: 500%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 24px;
+}
+
+.header_container3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header_button {
+    background-color: whitesmoke;
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0%;
+    transition-duration: all 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .header_button:hover {
+        background-color: green;
+        color: white;
+    }
+
+    .header_button span {
         cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
+        display: inline-block;
+        position: relative;
+        transition: 1s;
+    }
+
+        .header_button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .header_button:hover span {
+        padding-right: 25px;
+        color: white;
+    }
+
+        .header_button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+/********************************************/
+
+/********************************************/
+/*         FRONT PAGE BODY layout           */
+/********************************************/
+.body_container {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: darkslategrey;
+    padding: 10px;
+    text-align: center;
+    background-image: url(../images/bodyBackground.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+}
+
+.body_text {
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    font-family: "Geomanist", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+.body_button {
+    background-color: transparent;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    transition-duration: all 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .body_button:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+
+    .body_button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 1s;
+    }
+
+        .body_button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .body_button:hover span {
+        padding-right: 50px;
+        color: black;
+    }
+
+        .body_button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+/********************************************/
+
+/********************************************/
+/*         FRONT PAGE FOOTER layout         */
+/********************************************/
+
+.body_footer_container {
+    display: grid;
+    background-color: lightgreen;
+    grid-template-columns: auto auto auto;
+}
+    .body_footer_one {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+    .body_footer_two {
+        
+    }
+    .body_footer_three {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+/********************************************/
+/********************************************/
+/*            ARTIST PAGE layout            */
+/********************************************/
+.artist_header {
+    display: block;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+    .artist_top {
+        font-size: 100px;
+        font-weight: 900;
+    }
+    .artist_bottom {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+.artist_body {
+    background-color: darkslategrey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+    .artist_one {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 100px;
+        background-image: url(../images/gretathunberg.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_one:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_two {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 100px;
+        background-image: url(../images/Blackpanther.jpeg);
+        background-size: cover;
+        background-position: top;
+        transition: 1.0s;
+    }
+        .artist_two:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_three {
+        grid-column: 3;
+        grid-row: 1;
+        padding: 100px;
+        background-image: url(../images/chris-brown.jpeg);
+        background-size: cover;
+        background-position: top;
+        transition: 1.0s;
+    }
+        .artist_three:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_four {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 100px;
+        background-image: url(../images/magicarp.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_four:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_five {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 100px;
+        background-image: url(../images/naruto.png);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+    .artist_five:hover {
+        background-image: none;
+        background-color: lightgreen;
+        color: black;
+        font-size: 20px;
+    }
+    .artist_six {
+        grid-column: 3;
+        grid-row: 2;
+        padding: 100px;
+        background-image: url(../images/randomasianguy.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_six:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_seven {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 100px;
+        background-image: url(../images/samosa.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_seven:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_eight {
+        grid-column: 2;
+        grid-row: 3;
+        padding: 100px;
+        background-image: url(../images/spongebob.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_eight:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+    .artist_nine {
+        grid-column: 3;
+        grid-row: 3;
+        padding: 100px;
+        background-image: url(../images/therock.webp);
+        background-size: cover;
+        background-position: center;
+        transition: 1.0s;
+    }
+        .artist_nine:hover {
+            background-image: none;
+            background-color: lightgreen;
+            color: black;
+            font-size: 20px;
+        }
+/********************************************/
+
+/********************************************/
+/*        OVERNATNING PAGE layout           */
+/********************************************/
+.overnatning_container {
+    color: white;
+    background-color: darkslategrey;
+    padding: 20px;
+}
+/********************************************/
+
+/********************************************/
+/*             MAD PAGE layout              */
+/********************************************/
+.mad_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .mad_body {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: minmax(500px, auto);
+    }
+        .mad_body_one {
+            background-image: url(../images/mad/butterchicken.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .mad_body_two {
+            background-image: url(../images/mad/dessertcake.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .mad_body_three {
+            background-image: url(../images/mad/juicymeat.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .mad_body_four {
+            background-image: url(../images/mad/veganbowl.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .mad_body_five {
+            background-image: url(../images/mad/tofu.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .mad_body_six {
+            background-image: url(../images/mad/idk.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+/********************************************/
+
+/********************************************/
+/*            OMOS PAGE layout              */
+/********************************************/
+.omos_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .omos_header {
+
+    }
+    .omos_body {
+
+    }
+    .omos_footer {
+        display: flex;
+        gap: 30px;
+    }
+/********************************************/
+
+/********************************************/
+/*          FRIVILLIG PAGE layout           */
+/********************************************/
+.frivillig_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .frivillig_header {
+
+    }
+    .frivillig_body {
+
+    }
+    .frivillig_footer {
+
+    }
+/********************************************/
+
+/********************************************/
+/*            LOGIN PAGE layout             */
+/********************************************/
+.login_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .login_header {
+
+    }
+    .login_body {
+
+    }
+    .login_footer {
+
+    }
+/********************************************/
+
+/********************************************/
+/*             VAGT PAGE layout             */
+/********************************************/
+.vagt_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .vagt_header {
+
+    }
+    .vagt_body {
+
+    }
+    .vagt_footer {
+
+    }
+/********************************************/
+
+/********************************************/
+/*            OPGAVE PAGE layout            */
+/********************************************/
+.opgave_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+
+    .opgave_header {
+
+    }
+    .opgave_body {
+
+    }
+    .opgave_footer {
+
     }

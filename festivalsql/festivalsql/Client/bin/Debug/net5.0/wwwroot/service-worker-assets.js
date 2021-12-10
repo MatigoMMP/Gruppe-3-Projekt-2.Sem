@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-M2ArtOKzI88xH32wrbt2H7KFFy2NO8pQccLB5oNw9Vc=",
+      "hash": "sha256-+jrJRgK3Wn9bCOkywu+S\/fYN7erwUXh5xbYpK+fsw5M=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -821,19 +821,19 @@
       "url": "_framework\/dotnet.5.0.12.js"
     },
     {
-      "hash": "sha256-nWkjw4yjQ2Hdg0oBIj54NwlgP4z+6miCEqPsH0kiDvM=",
+      "hash": "sha256-wO8SKFCg4yPyhjyKOw4p5AsbePChgYJzWux9Frj9WIc=",
       "url": "_framework\/festivalsql.Shared.dll"
     },
     {
-      "hash": "sha256-sxvlcuFevp5Z\/+nBzN5mX+F7SSoTndJvqJX\/ASxocZs=",
+      "hash": "sha256-tCeci\/cgzHV\/h\/41b5htRQ9qqUSQzZS7bPpCcrNvlsU=",
       "url": "_framework\/festivalsql.Shared.pdb"
     },
     {
-      "hash": "sha256-VIoMruNsH88S1gWBAUnNQh0VRL0eq3upVYmV2kiML\/M=",
+      "hash": "sha256-q+9sLTeJMrMB4QrwfnmyiTac7P6rCvlXGParbpmBz4g=",
       "url": "_framework\/festivalsql.Client.dll"
     },
     {
-      "hash": "sha256-b\/Ez0IgRA8ioWA7v8UrPw+CFLBvmym\/JbloOkZjPsZI=",
+      "hash": "sha256-FAxBCMFu0KLwNVeZJxGt+WLmupmFyqEvlBFyvDavU4s=",
       "url": "_framework\/festivalsql.Client.pdb"
     },
     {
@@ -1657,11 +1657,19 @@
       "url": "_framework\/dotnet.5.0.12.js.gz"
     },
     {
-      "hash": "sha256-tWJySxqOK4tAI\/kspcVL54mqX\/V0KJAbFuQT1iddrzU=",
+      "hash": "sha256-gZXMNg+8sqm1GZQONJ\/hTNgQIHPxSX2zZ39CsQThstQ=",
       "url": "_framework\/festivalsql.Shared.dll.gz"
     },
     {
-      "hash": "sha256-SO\/fuIIWUxoIu1OABrOpK5n\/AvzxJcg+0H3PT1eutAE=",
+      "hash": "sha256-fDQyZxBgeLkoMkWJmbD4ycnNrggVhmBbKOjzWUHVdNw=",
+      "url": ".DS_Store"
+    },
+    {
+      "hash": "sha256-b1dh9QHIvxSsRZzcFxfTFF1enwzgQqbaMmHCjafNZUw=",
+      "url": "css\/.DS_Store"
+    },
+    {
+      "hash": "sha256-kDy8WWp+fsp7OYLjDdfMiWHcG1hF96xQ7oLv85inZL8=",
       "url": "css\/app.css"
     },
     {
@@ -1717,6 +1725,102 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-eVm0dJtYc6cmuhY\/LvCcpBAHGb\/TIJ5siMm4rrMI9LA=",
+      "url": "images\/.DS_Store"
+    },
+    {
+      "hash": "sha256-EbQer0JWCzSNf062KbDybH537h\/IlPkWJJtanKF5Yc4=",
+      "url": "images\/aarhuskommune.png"
+    },
+    {
+      "hash": "sha256-byYnXskzcoD0BSWLAgDW3e2ckvpCwScy4fxGkhcy\/4Q=",
+      "url": "images\/aarhusstreetfood.png"
+    },
+    {
+      "hash": "sha256-0YyznfRR9ShojmM7V8FCzOd+7dMSJbEcEKZGg+yfEPE=",
+      "url": "images\/Blackpanther.jpeg"
+    },
+    {
+      "hash": "sha256-6BGlKiiUM32rGi7Z0KsSv1o7e6uxlw44HNBQgfJ5N5k=",
+      "url": "images\/bodyBackground.svg"
+    },
+    {
+      "hash": "sha256-gJJF+yHrvOlU1MfVAWShXTW+C3jdbpYd7\/geGeJwOAI=",
+      "url": "images\/chris-brown.jpeg"
+    },
+    {
+      "hash": "sha256-QVa0n+kIfTT7Hz9ivPBnKBU9eydb\/UxOxBeiY4zEjEM=",
+      "url": "images\/detdanskespejder.jpeg"
+    },
+    {
+      "hash": "sha256-neRmnOSA\/EFXZencyZtKBbalLRj0OHP\/d8hGsIz+jm4=",
+      "url": "images\/dknaturfredforening.jpeg"
+    },
+    {
+      "hash": "sha256-z5Jg7z7f4raENI8lPQZcJhnViIghXdOE3ff7ozDoc8U=",
+      "url": "images\/gretathunberg.jpeg"
+    },
+    {
+      "hash": "sha256-zJ4fzc\/TpIbEXtCcSIl08JkuISPL\/M6elcgNmonDJW4=",
+      "url": "images\/grønomstilling.png"
+    },
+    {
+      "hash": "sha256-jokwRvh2HVF1iYcjzznqISuD2sqEA1QQx4nc\/KxOLsg=",
+      "url": "images\/logo.png"
+    },
+    {
+      "hash": "sha256-d0yCrjWZhbBJDWG7XxxWhyAPbUsnFQ8PQvoI6YWjMAo=",
+      "url": "images\/logo1.png"
+    },
+    {
+      "hash": "sha256-hx29zozsATh+iIfJXX7kG\/vzpbHTAJhLza790rFgnBg=",
+      "url": "images\/mad\/butterchicken.jpeg"
+    },
+    {
+      "hash": "sha256-ZQBV1Xc0n8G87NtKIS6yNbFZjM\/xlsmEgYVw6qbSd7I=",
+      "url": "images\/mad\/dessertcake.jpeg"
+    },
+    {
+      "hash": "sha256-6vh05rTQgBt6aStdbYOMLPsDjbDzxj1MRSiY9wpgoXY=",
+      "url": "images\/mad\/idk.jpeg"
+    },
+    {
+      "hash": "sha256-foHGyfecztm9DkP19WPnFuqJBtzNlz\/aB\/GzsdoSX1w=",
+      "url": "images\/mad\/juicymeat.jpeg"
+    },
+    {
+      "hash": "sha256-67pCuB4SmWPgoGg9yrlhbsB76nlv+8kGAsj76vcTSq4=",
+      "url": "images\/mad\/tofu.jpeg"
+    },
+    {
+      "hash": "sha256-u5Qb\/1X+3HiN2L8VotNsHF7812tuNyyytMTXEoNHRAs=",
+      "url": "images\/mad\/veganbowl.jpeg"
+    },
+    {
+      "hash": "sha256-fQ3EN6F\/pQUXdAy+a205VDusM3o4AIdTO4Z6k5DjpDk=",
+      "url": "images\/magicarp.jpeg"
+    },
+    {
+      "hash": "sha256-k92s0AAO3Fa8dJhKUIZGSkh0bNXXNUT39NdPAY7BviE=",
+      "url": "images\/naruto.png"
+    },
+    {
+      "hash": "sha256-u+gW4Nrt3rwgfeK8zeG05GAzMRfZjsq27Ms0zrDRNSA=",
+      "url": "images\/randomasianguy.jpeg"
+    },
+    {
+      "hash": "sha256-fpc+GW3XzOKGectHpP9DaWgZPjfNuYk+OmvW+me\/624=",
+      "url": "images\/samosa.jpeg"
+    },
+    {
+      "hash": "sha256-f8si6F7IxKqwfD50mOSqoB8T5J19EiKf2\/9gsk062hI=",
+      "url": "images\/spongebob.jpeg"
+    },
+    {
+      "hash": "sha256-p0yZEK0RbuKbq6J6bcOrlYqfHO\/2s4q+WiuZl8vBQKo=",
+      "url": "images\/therock.webp"
+    },
+    {
       "hash": "sha256-IL9HRug9ChBF2Ooyby6Tk1QjGGJdHWDOGfozGm572Gc=",
       "url": "index.html"
     },
@@ -1733,5 +1837,5 @@
       "url": "festivalsql.Client.bundle.scp.css"
     }
   ],
-  "version": "O8t+JA9D"
+  "version": "t\/PmMLqn"
 };

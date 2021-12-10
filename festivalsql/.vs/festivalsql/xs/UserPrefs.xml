@@ -1,18 +1,27 @@
 ﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Client/Pages/ListUsers.razor">
+    <Files>
+      <File FileName="festivalsql/Client/Pages/Index.razor" Line="40" Column="1" />
+      <File FileName="festivalsql/Client/Pages/ListJobs.razor" Line="1" Column="1" />
+      <File FileName="festivalsql/Client/Pages/ListShifts.razor" Line="1" Column="1" />
+      <File FileName="festivalsql/Client/Pages/ListUsers.razor" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="festivalsql" expanded="True">
             <Node name="festivalsql.Client" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ListUsers.razor" selected="True" />
+              </Node>
               <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
             </Node>
             <Node name="festivalsql.Server" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="UserContext.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
             </Node>
             <Node name="festivalsql.Shared" expanded="True">
               <Node name="Models" expanded="True" />
@@ -22,7 +31,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
