@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-+jrJRgK3Wn9bCOkywu+S\/fYN7erwUXh5xbYpK+fsw5M=",
+      "hash": "sha256-xAFwEdZBzTnaz683irSJBXG+hF14XlgPqsEGCGh7G+Y=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -821,19 +821,19 @@
       "url": "_framework\/dotnet.5.0.12.js"
     },
     {
-      "hash": "sha256-wO8SKFCg4yPyhjyKOw4p5AsbePChgYJzWux9Frj9WIc=",
+      "hash": "sha256-jNVj9aGDVNjlagIGREEMmuzcCfdfHnl5pp6LVzPeNTA=",
       "url": "_framework\/festivalsql.Shared.dll"
     },
     {
-      "hash": "sha256-tCeci\/cgzHV\/h\/41b5htRQ9qqUSQzZS7bPpCcrNvlsU=",
+      "hash": "sha256-EKoY9jWiRhl1Mmxt0jZmSv921e2FL2ZTsR2hGcCZazk=",
       "url": "_framework\/festivalsql.Shared.pdb"
     },
     {
-      "hash": "sha256-q+9sLTeJMrMB4QrwfnmyiTac7P6rCvlXGParbpmBz4g=",
+      "hash": "sha256-Nt8f7PTkaDo8mORh3kDphwbCytstENi7oVFg7DCpjoY=",
       "url": "_framework\/festivalsql.Client.dll"
     },
     {
-      "hash": "sha256-FAxBCMFu0KLwNVeZJxGt+WLmupmFyqEvlBFyvDavU4s=",
+      "hash": "sha256-9vy3gx0pMCBSq4Dn5Z6dRH\/7YcXf+F5HMVNfqlF7MEw=",
       "url": "_framework\/festivalsql.Client.pdb"
     },
     {
@@ -1657,7 +1657,7 @@
       "url": "_framework\/dotnet.5.0.12.js.gz"
     },
     {
-      "hash": "sha256-gZXMNg+8sqm1GZQONJ\/hTNgQIHPxSX2zZ39CsQThstQ=",
+      "hash": "sha256-6Q8+rlhswJst\/1ybMucCQPTfisHW4YhLjuhGO5C+ajM=",
       "url": "_framework\/festivalsql.Shared.dll.gz"
     },
     {
@@ -1837,5 +1837,5 @@
       "url": "festivalsql.Client.bundle.scp.css"
     }
   ],
-  "version": "t\/PmMLqn"
+  "version": "tnPKgiNO"
 };

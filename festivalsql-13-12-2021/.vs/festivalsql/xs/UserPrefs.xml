@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Shared/Models/Job.cs">
+    <Files>
+      <File FileName="festivalsql/Shared/Models/Job.cs" Line="1" Column="1" />
+      <File FileName="festivalsql/Server/Data/JobContext.cs" Line="4" Column="1" />
+      <File FileName="festivalsql/Server/Data/JobDbOperations.cs" Line="3" Column="33" />
+      <File FileName="festivalsql/Server/Controllers/JobController.cs" Line="12" Column="57" />
+      <File FileName="festivalsql/Server/Startup.cs" Line="1" Column="1" />
+      <File FileName="festivalsql/Server/Data/ShiftDbOperations.cs" Line="13" Column="49" />
+      <File FileName="festivalsql/Server/Data/UserService.cs" Line="11" Column="52" />
+      <File FileName="festivalsql/Shared/Models/Shift.cs" Line="1" Column="1" />
+      <File FileName="festivalsql/Shared/Models/User.cs" Line="1" Column="1" />
+      <File FileName="festivalsql/Server/Controllers/ShiftController.cs" Line="12" Column="60" />
+      <File FileName="festivalsql/Server/Controllers/UserController.cs" Line="18" Column="47" />
+      <File FileName="festivalsql/Client/Pages/ListUsers.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="festivalsql" expanded="True">
+            <Node name="festivalsql.Client" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="festivalsql.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="festivalsql.Shared" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Job.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
