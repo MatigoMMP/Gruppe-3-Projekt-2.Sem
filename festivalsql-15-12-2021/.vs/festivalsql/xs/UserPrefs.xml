@@ -7,7 +7,7 @@
       <File FileName="festivalsql/Client/Pages/ListJobDetails.razor" />
       <File FileName="festivalsql/Client/Pages/ListJobs.razor" />
       <File FileName="festivalsql/Client/Shared/NavMenu.razor" />
-      <File FileName="festivalsql/Shared/Models/FestivalContext.cs" Line="26" Column="25" />
+      <File FileName="festivalsql/Shared/Models/FestivalContext.cs" Line="26" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

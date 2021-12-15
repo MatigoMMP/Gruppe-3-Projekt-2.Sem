@@ -3,10 +3,11 @@
 @inject HttpClient Http
 
 <div class="listjobs_container">
-    <div class="listjobs_list">
-        <h1>Liste over opgaver</h1>
+    <div class="listjobs_header">
+        <div class="listjobs_list">
+            <h1>Liste over opgaver</h1>
 
-        @if (jobs == null)
+            @if (jobs == null)
         {
             <p><em>Loading...</em></p>
         }
@@ -25,21 +26,90 @@
                 <tbody>
                     @foreach (var job in jobs)
                     {
-                        <tr>
-                            <td>@job.opgavedetalje_id</td>
-                            <td>@job.placering_id</td>
-                            <td>@job.status_id</td>
-                            <td>
-                                <button class="btn btn-sm btn-primary" @onclick="@(() => GetJob(@job.opgave_id))">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteJob(@job.opgave_id))">Delete</button>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>@job.opgavedetalje_id</td>
+                        <td>@job.placering_id</td>
+                        <td>@job.status_id</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" @onclick="@(() => GetJob(@job.opgave_id))">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteJob(@job.opgave_id))">Delete</button>
+                        </td>
+                    </tr>
                     }
                 </tbody>
             </table>
         }
+        </div>
+        <div class="listjobs_detail">
+            <h1 listjobs_h1>Job Details</h1>
+
+            @if (jobDetails == null)
+            {
+            <p><em>Loading...</em></p>
+            }
+            else
+            {
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID |</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var jobDetail in jobDetails)
+                        {
+                    <tr>
+                        <td>@jobDetail.opgavedetalje_id</td>
+                        <td>@jobDetail.navn</td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+
+            <br />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID |</th>
+                        <th>Place</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var place in places)
+                        {
+                    <tr>
+                        <td>@place.placering_id</td>
+                        <td>@place.navn</td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+
+            <br />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID |</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var status in statuses)
+                        {
+                    <tr>
+                        <td>@status.status_id</td>
+                        <td>@status.navn</td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+            }
+        </div>
     </div>
 
     <div class="listjobs_submit">
@@ -64,6 +134,8 @@
 </div>
 
     @code {
+
+        @* Liste af jobs *@
         private List<Job> jobs;
 
         private Job newJob = new Job();
@@ -73,6 +145,12 @@
         protected override async Task OnInitializedAsync()
         {
             jobs = await Http.GetFromJsonAsync<List<Job>>("api/job");
+
+            jobDetails = await Http.GetFromJsonAsync<List<JobDetail>>("api/jobdetail");
+
+            places = await Http.GetFromJsonAsync<List<Place>>("api/jobplace");
+
+            statuses = await Http.GetFromJsonAsync<List<Status>>("api/jobstatus");
         }
 
         private async Task GetJob(int id)
@@ -101,4 +179,13 @@
             await Http.DeleteAsync("api/job/delete" + id);
             await OnInitializedAsync();
         }
+
+        @* Liste af job detaljer *@
+
+        private List<JobDetail> jobDetails;
+
+        private List<Place> places;
+
+        private List<Status> statuses;
+
     }
