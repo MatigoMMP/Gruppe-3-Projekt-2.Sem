@@ -1,0 +1,87 @@
+﻿@page "/listjobdetails"
+@using festivalsql.Shared.Models;
+@inject HttpClient Http
+
+<h1>Job Details</h1>
+
+@if (jobDetails == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>ID |</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var jobDetail in jobDetails)
+            {
+                <tr>
+                    <td>@jobDetail.opgavedetalje_id</td>
+                    <td>@jobDetail.navn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID |</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var place in places)
+            {
+                <tr>
+                    <td>@place.placering_id</td>
+                    <td>@place.navn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID |</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var status in statuses)
+            {
+                <tr>
+                    <td>@status.status_id</td>
+                    <td>@status.navn</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<JobDetail> jobDetails;
+
+    private List<Place> places;
+
+    private List<Status> statuses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        jobDetails = await Http.GetFromJsonAsync<List<JobDetail>>("api/jobdetail");
+
+        places = await Http.GetFromJsonAsync<List<Place>>("api/jobplace");
+
+        statuses = await Http.GetFromJsonAsync<List<Status>>("api/jobstatus");
+    }
+}
