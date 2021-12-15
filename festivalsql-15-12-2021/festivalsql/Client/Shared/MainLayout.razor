@@ -1,17 +1,86 @@
 ﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components
+@using Microsoft.Extensions.Logging
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject IJSRuntime JS
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <div class="main">
-        <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-        </div>
-
-        <div class="content px-4">
-            @Body
-        </div>
-    </div>
+<div class="sidebar" hidden>
+    <NavMenu />
 </div>
+
+<div class="main">
+    <div class="header_container">
+        <div class="header_container2">
+            <img class="header_container2_itemlogo" src="images/logo1.png" @onclick="Home" style="cursor: pointer;">
+            <p class="header_container2_itemtext"> 1. Juni - 7. Juni 2022 </p>
+        </div>
+
+        @*KNAPPER*@
+        <div class="header_container3">
+            <button class="header_button" @onclick="Om_os"><span>Om os </span></button>
+        </div>
+
+        <div class="header_container3">
+            <button class="header_button" @onclick="Login"><span>Login </span></button>
+        </div>
+
+        @*<button class="open-button" onclick="openForm()">Open Form</button>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>*@
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+
+    <div class="body_footer_container">
+        <div class="body_footer_one">
+            <div> Kontakt os </div>
+            <div> Presserum  </div>
+            <div> Konkurrencebetingelse  </div>
+            <div> leverandør </div>
+            <div> Til restuarantør </div>
+            <div> Til handelsboer </div>
+            <div> Cookiepolitik </div>
+        </div>
+        <div class="body_footer_two"> @* SKAL VÆRE EMPTY *@ </div>
+        <div class="body_footer_three">
+            <img src="images/aarhuskommune.png" style="width: 50%; height: auto;">
+            <img src="images/detdanskespejder.jpeg" style="width: 50%; height: auto;">
+            <img src="images/grønomstilling.png" style="width: 50%; height: auto;">
+            <img src="images/aarhusstreetfood.png" style="width: 50%; height: auto;">
+            <img src="images/dknaturfredforening.jpeg" style="width: 50%; height: auto;">
+        </div>
+    </div>
+
+</div>
+
+@code {
+
+    private void Om_os()
+    {
+        NavigationManager.NavigateTo("omOs");
+    }
+    private void Home()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void Login()
+    {
+        NavigationManager.NavigateTo("login");
+    }
+
+}

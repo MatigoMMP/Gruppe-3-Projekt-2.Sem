@@ -13,77 +13,77 @@ namespace festivalsql.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 1 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 2 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 3 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 4 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 5 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 6 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 7 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 8 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 9 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using festivalsql.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/_Imports.razor"
+#line 10 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/_Imports.razor"
 using festivalsql.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/Pages/ListShifts.razor"
+#line 2 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/ListShifts.razor"
 using festivalsql.Shared.Models;
 
 #line default
@@ -98,45 +98,46 @@ using festivalsql.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 66 "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Client/Pages/ListShifts.razor"
-       
-    private List<Shift> shifts;
+#line 73 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/ListShifts.razor"
+               
+            private List<Shift> shifts;
 
-    private Shift newShift = new Shift();
+            private Shift newShift = new Shift();
 
-    private bool edit = false;
+            private bool edit = false;
 
-    protected override async Task OnInitializedAsync()
-    {
-        shifts = await Http.GetFromJsonAsync<List<Shift>>("api/shift");
-    }
+            protected override async Task OnInitializedAsync()
+            {
+                shifts = await Http.GetFromJsonAsync<List<Shift>>("api/shift");
+            }
 
-    private async Task GetShift(int id)
-    {
-        newShift = await Http.GetFromJsonAsync<Shift>("api/shift/detail/" + id);
-        edit = true;
-    }
+            private async Task GetShift(int id)
+            {
+                newShift = await Http.GetFromJsonAsync<Shift>("api/shift/detail/" + id);
+                edit = true;
+            }
 
-    private async Task SubmitShift()
-    {
-        if (edit == false)
-        {
-            await Http.PostAsJsonAsync<Shift>("api/shift/create", newShift);
-            await OnInitializedAsync();
-        }
-        else
-        {
-            await Http.PutAsJsonAsync<Shift>("api/shift/edit", newShift);
-            edit = false;
-            await OnInitializedAsync();
-        }
-    }
+            private async Task SubmitShift()
+            {
+                if (edit == false)
+                {
+                    await Http.PostAsJsonAsync<Shift>("api/shift/create", newShift);
+                    await OnInitializedAsync();
+                }
+                else
+                {
+                    await Http.PutAsJsonAsync<Shift>("api/shift/edit", newShift);
+                    edit = false;
+                    await OnInitializedAsync();
+                }
+            }
 
-    private async Task DeleteShift(int id)
-    {
-        await Http.DeleteAsync("api/shift/delete" + id);
-        await OnInitializedAsync();
-    }
+            private async Task DeleteShift(int id)
+            {
+                await Http.DeleteAsync("api/shift/delete" + id);
+                await OnInitializedAsync();
+            }
+        
 
 #line default
 #line hidden

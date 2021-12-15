@@ -1,0 +1,38 @@
+﻿@page "/login"
+@using festivalsql.Shared.Models;
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime IJRuntime
+
+<div class="login_container">
+    <div class="login_header">
+        <h1> Login </h1>
+    </div>
+    <div class="login_body">
+        <form method="post">
+            <div class="login_body_container">
+                <label for="uname"><b>Username</b></label>
+                <input class="login_input" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input class="login_input" type="text" placeholder="Enter Password" name="psw" required>
+
+                <input type="submit" class="login_button" value="Login">
+                <input type="reset" class="login_button" value="Nulstil">
+
+                @*<button class="login_button" @onclick="Navigate">Login</button>*@
+            </div>
+        </form>
+    </div>
+    <div class="login_footer">
+
+    </div>
+</div>
+
+
+@code{
+    private void Navigate()
+    {
+        NavigationManager.NavigateTo("/WhenLoggedIn");
+    }
+}

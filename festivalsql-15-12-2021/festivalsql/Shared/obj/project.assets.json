@@ -852,19 +852,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/victorpascale/.nuget/packages/": {}
+    "/Users/jisoo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+      "projectUniqueName": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
       "projectName": "festivalsql.Shared",
-      "projectPath": "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
-      "packagesPath": "/Users/victorpascale/.nuget/packages/",
-      "outputPath": "/Users/victorpascale/Projects/festivalsql-13-12-2021/festivalsql/Shared/obj/",
+      "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+      "packagesPath": "/Users/jisoo/.nuget/packages/",
+      "outputPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/victorpascale/.config/NuGet/NuGet.Config"
+        "/Users/jisoo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -914,7 +914,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }

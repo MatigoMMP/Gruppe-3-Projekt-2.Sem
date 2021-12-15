@@ -1,0 +1,29 @@
+﻿@page "/billet"
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="billet_container">
+    <div class="billet_header">
+        <div><h1> Partoutbillet </h1></div>
+        <div><h1> Endagsbillet </h1></div>
+    </div>
+    <div class="billet_body">
+        <div class="billet_partout" @onclick="Partoutbillet"> Partout </div>
+        <div class="billet_endags" @onclick="Endagsbillet"> Endags </div>
+    </div>
+    <div class="billet_footer">
+
+    </div>
+</div>
+
+@code {
+
+    private void Partoutbillet()
+        {
+            NavigationManager.NavigateTo("endagsbillet");
+        }
+    private void Endagsbillet()
+        {
+            NavigationManager.NavigateTo("partoutbillet");
+        }
+}

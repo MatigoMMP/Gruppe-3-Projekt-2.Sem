@@ -2,103 +2,110 @@
 @using festivalsql.Shared.Models;
 @inject HttpClient Http
 
-<h1>Shifts</h1>
+<div class="listshifts_container">
+    <div class="listshifts_list">
+        <h1>Liste over vagter</h1>
 
-@if (shifts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Start time</th>
-                <th>End time</th>
-                <th>Job</th>
-                <th>User</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var shift in shifts)
-            {
-                <tr>
-                    <td>@shift.starttid</td>
-                    <td>@shift.sluttid</td>
-                    <td>@shift.opgave_id</td>
-                    <td>@shift.bruger_id</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary" @onclick="@(() => GetShift(@shift.vagt_id))">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteShift(@shift.vagt_id))">Delete</button>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-
-<h4>Submit user</h4>
-
-<form>
-    <div class="form-group">
-        <label>Start time</label>
-        <input class="form-control col-sm-3" @bind="newShift.starttid" />
-    </div>
-    <div class="form-group">
-        <label>End time</label>
-        <input class="form-control col-sm-3" @bind="newShift.sluttid" />
-    </div>
-    <div class="form-group">
-        <label>Job</label>
-        <input class="form-control col-sm-3" @bind="newShift.opgave_id" />
-    </div>
-    <div class="form-group">
-        <label>User</label>
-        <input class="form-control col-sm-3" @bind="newShift.bruger_id" />
-    </div>
-    <button class="btn btn-primary" @onclick="SubmitShift">Submit</button>
-</form>
-
-@code {
-    private List<Shift> shifts;
-
-    private Shift newShift = new Shift();
-
-    private bool edit = false;
-
-    protected override async Task OnInitializedAsync()
-    {
-        shifts = await Http.GetFromJsonAsync<List<Shift>>("api/shift");
-    }
-
-    private async Task GetShift(int id)
-    {
-        newShift = await Http.GetFromJsonAsync<Shift>("api/shift/detail/" + id);
-        edit = true;
-    }
-
-    private async Task SubmitShift()
-    {
-        if (edit == false)
+        @if (shifts == null)
         {
-            await Http.PostAsJsonAsync<Shift>("api/shift/create", newShift);
-            await OnInitializedAsync();
+            <p><em>Loading...</em></p>
         }
         else
         {
-            await Http.PutAsJsonAsync<Shift>("api/shift/edit", newShift);
-            edit = false;
-            await OnInitializedAsync();
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Start time</th>
+                        <th>End time</th>
+                        <th>Job</th>
+                        <th>User</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var shift in shifts)
+                    {
+                        <tr>
+                            <td>@shift.starttid</td>
+                            <td>@shift.sluttid</td>
+                            <td>@shift.opgave_id</td>
+                            <td>@shift.bruger_id</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" @onclick="@(() => GetShift(@shift.vagt_id))">Edit</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" @onclick="@(() => DeleteShift(@shift.vagt_id))">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         }
-    }
+    </div>
 
-    private async Task DeleteShift(int id)
-    {
-        await Http.DeleteAsync("api/shift/delete" + id);
-        await OnInitializedAsync();
-    }
-}
+    <div class="listshifts_submit">
+
+        <h4>Opret vagt</h4>
+
+        <form>
+            <div class="form-group">
+                <label>Start time</label>
+                <input class="form-control col-sm-3" @bind="newShift.starttid" />
+            </div>
+            <div class="form-group">
+                <label>End time</label>
+                <input class="form-control col-sm-3" @bind="newShift.sluttid" />
+            </div>
+            <div class="form-group">
+                <label>Job</label>
+                <input class="form-control col-sm-3" @bind="newShift.opgave_id" />
+            </div>
+            <div class="form-group">
+                <label>User</label>
+                <input class="form-control col-sm-3" @bind="newShift.bruger_id" />
+            </div>
+            <button class="btn btn-primary" @onclick="SubmitShift">Submit</button>
+        </form>
+    </div>
+</div>
+
+        @code {
+            private List<Shift> shifts;
+
+            private Shift newShift = new Shift();
+
+            private bool edit = false;
+
+            protected override async Task OnInitializedAsync()
+            {
+                shifts = await Http.GetFromJsonAsync<List<Shift>>("api/shift");
+            }
+
+            private async Task GetShift(int id)
+            {
+                newShift = await Http.GetFromJsonAsync<Shift>("api/shift/detail/" + id);
+                edit = true;
+            }
+
+            private async Task SubmitShift()
+            {
+                if (edit == false)
+                {
+                    await Http.PostAsJsonAsync<Shift>("api/shift/create", newShift);
+                    await OnInitializedAsync();
+                }
+                else
+                {
+                    await Http.PutAsJsonAsync<Shift>("api/shift/edit", newShift);
+                    edit = false;
+                    await OnInitializedAsync();
+                }
+            }
+
+            private async Task DeleteShift(int id)
+            {
+                await Http.DeleteAsync("api/shift/delete" + id);
+                await OnInitializedAsync();
+            }
+        }
