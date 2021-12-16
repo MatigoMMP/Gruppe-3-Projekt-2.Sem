@@ -97,6 +97,50 @@ using festivalsql.Shared.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 26 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/Endagsbillet.razor"
+       
+    private List<Endags> endags;
+
+    private Endags newEndags = new Endags();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        endags = await Http.GetFromJsonAsync<List<Endags>>("api/endags");
+    }
+
+    private async Task GetEndags(int id)
+    {
+        newEndags = await Http.GetFromJsonAsync<Endags>("api/endags/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitEndags()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Endags>("api/endags/create", newEndags);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Endags>("api/endags/edit", newEndags);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeleteEndags(int id)
+    {
+        await Http.DeleteAsync("api/endags/delete" + id);
+        await OnInitializedAsync();
+    }
+
+#line default
+#line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

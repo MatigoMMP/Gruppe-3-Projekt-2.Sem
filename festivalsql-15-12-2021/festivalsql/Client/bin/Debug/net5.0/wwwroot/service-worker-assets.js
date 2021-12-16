@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-LZmgiYK1eWmLuGkZTEgAvELZvbFCc2yR+cvlvEHPF6U=",
+      "hash": "sha256-ic9K1kG1ohp+DUQ7UvuaYu\/V\/OwrUIlVI8cYfLCh\/7w=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -821,19 +821,19 @@
       "url": "_framework\/dotnet.5.0.12.js"
     },
     {
-      "hash": "sha256-TrVVQqKm\/Lck8nrMe85LEAa0nQ3FP\/YyXAK9eNd6NUY=",
+      "hash": "sha256-YvO9VcBjCaUVFe2ARR\/1cNpwC+ERayUT8XwpAaiSw8s=",
       "url": "_framework\/festivalsql.Shared.dll"
     },
     {
-      "hash": "sha256-R87Ih16sAAaegt0241mEKzu1BORv0e2rxZl4oZOuZiU=",
+      "hash": "sha256-ABc7Joo9b8q8CqEie2GWQ28G7WUkqSmqMf57aa3ISDg=",
       "url": "_framework\/festivalsql.Shared.pdb"
     },
     {
-      "hash": "sha256-hLJA8FNQEzfja7BM31H7I\/KfyFSYS668u\/pRai9VKcg=",
+      "hash": "sha256-srK\/kwnTFkij3O\/WORwxm0QoBTMta3r2lCD09McO0WU=",
       "url": "_framework\/festivalsql.Client.dll"
     },
     {
-      "hash": "sha256-gHwB\/r6nXECHaCrRv7OC8wqymWR\/qHdUHf+0n3z6lYA=",
+      "hash": "sha256-\/shXO5pokiKzBAXBXqhCvQhyvGbc0o5kmouQq5lqcK0=",
       "url": "_framework\/festivalsql.Client.pdb"
     },
     {
@@ -1657,7 +1657,7 @@
       "url": "_framework\/dotnet.5.0.12.js.gz"
     },
     {
-      "hash": "sha256-GQzx42QOkpsiOyDCaOX7vEjIJaDYGu0XWDb1rQmqnvs=",
+      "hash": "sha256-JCWy7LCJi867c0cip0dMvSZykkXmJb9cA7EmLLnGRnU=",
       "url": "_framework\/festivalsql.Shared.dll.gz"
     },
     {
@@ -1665,11 +1665,11 @@
       "url": ".DS_Store"
     },
     {
-      "hash": "sha256-bT3JxB1w3IMm6HmFrL\/F3B0TYNYG1p11YVyZlzKkmRk=",
+      "hash": "sha256-DDPHaN0oNjkDJFD\/LuXQfIk0MZl9QtDZBPcHricBtqQ=",
       "url": "css\/.DS_Store"
     },
     {
-      "hash": "sha256-CEie1Rk4CI\/A76SHB9urdnAknMrhSIGQhhnriD+47QI=",
+      "hash": "sha256-+hEV3dosL64s\/nWQIf\/cgk\/UGKupP0m0zGAX8dbinR8=",
       "url": "css\/app.css"
     },
     {
@@ -1841,5 +1841,5 @@
       "url": "festivalsql.Client.bundle.scp.css"
     }
   ],
-  "version": "B+9rdUPh"
+  "version": "CraPdj3l"
 };

@@ -98,8 +98,8 @@ using festivalsql.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 66 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/ListJobs.razor"
-           
+#line 138 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/ListJobs.razor"
+                           
         private List<Job> jobs;
 
         private Job newJob = new Job();
@@ -109,6 +109,12 @@ using festivalsql.Shared.Models;
         protected override async Task OnInitializedAsync()
         {
             jobs = await Http.GetFromJsonAsync<List<Job>>("api/job");
+
+            jobDetails = await Http.GetFromJsonAsync<List<JobDetail>>("api/jobdetail");
+
+            places = await Http.GetFromJsonAsync<List<Place>>("api/jobplace");
+
+            statuses = await Http.GetFromJsonAsync<List<Status>>("api/jobstatus");
         }
 
         private async Task GetJob(int id)
@@ -137,6 +143,22 @@ using festivalsql.Shared.Models;
             await Http.DeleteAsync("api/job/delete" + id);
             await OnInitializedAsync();
         }
+
+        
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 183 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/ListJobs.razor"
+                                   
+
+        private List<JobDetail> jobDetails;
+
+        private List<Place> places;
+
+        private List<Status> statuses;
+
     
 
 #line default

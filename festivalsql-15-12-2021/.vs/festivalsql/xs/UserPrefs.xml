@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Shared/Models/FestivalContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Shared/Models/Partout.cs">
     <Files>
-      <File FileName="festivalsql/Shared/Models/Job.cs" Line="17" Column="27" />
-      <File FileName="festivalsql/Client/Services/JobService.cs" />
-      <File FileName="festivalsql/Server/Controllers/JobController.cs" />
-      <File FileName="festivalsql/Client/Pages/ListJobDetails.razor" />
-      <File FileName="festivalsql/Client/Pages/ListJobs.razor" />
-      <File FileName="festivalsql/Client/Shared/NavMenu.razor" />
-      <File FileName="festivalsql/Shared/Models/FestivalContext.cs" Line="26" Column="37" />
+      <File FileName="festivalsql/Shared/Models/Partout.cs" Line="15" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,7 +20,7 @@
             </Node>
             <Node name="festivalsql.Shared" expanded="True">
               <Node name="Models" expanded="True">
-                <Node name="FestivalContext.cs" selected="True" />
+                <Node name="Partout.cs" selected="True" />
               </Node>
             </Node>
           </Node>

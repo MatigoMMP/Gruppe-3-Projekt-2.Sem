@@ -1,3 +1,64 @@
 ﻿@page "/partoutbillet"
 @using festivalsql.Shared.Models;
 @inject HttpClient Http
+
+<div class="billet_container">
+    <div class="billet_submit">
+        <h4>Partoutbillet</h4>
+
+        <form>
+            <div class="form-group">
+                <label>Navn</label>
+                <input class="form-control col-sm-3" @bind="newPartout.navn" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control col-sm-3" @bind="newPartout.email" />
+            </div>
+            <div class="form-group">
+                <label>Telefon nr.</label>
+                <input class="form-control col-sm-3" @bind="newPartout.telefon" />
+            </div>
+            <button class="btn btn-primary" @onclick="SubmitPartout">Køb</button>
+        </form>
+    </div>
+</div>
+@code {
+    private List<Partout> partout;
+
+    private Partout newPartout = new Partout();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        partout = await Http.GetFromJsonAsync<List<Partout>>("api/partout");
+    }
+
+    private async Task GetPartout(int id)
+    {
+        newPartout = await Http.GetFromJsonAsync<Partout>("api/partout/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitPartout()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Partout>("api/partout/create", newPartout);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Partout>("api/partout/edit", newPartout);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeletePartout(int id)
+    {
+        await Http.DeleteAsync("api/partout/delete" + id);
+        await OnInitializedAsync();
+    }
+}

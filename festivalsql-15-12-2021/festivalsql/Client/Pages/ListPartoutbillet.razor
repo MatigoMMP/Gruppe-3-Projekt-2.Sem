@@ -1,3 +1,85 @@
 ﻿@page "/listpartoutbillet"
 @using festivalsql.Shared.Models;
 @inject HttpClient Http
+
+<div class="billet_container">
+    <div class="billet_list">
+        <h1> Liste over partoutbilletter </h1>
+
+        @if (partout == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nummer</th>
+                        <th>Navn</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var partoutbillet in partout)
+                    {
+                        <tr>
+                            <td>@partoutbillet.partout_id</td>
+                            <td>@partoutbillet.navn</td>
+                            <td>@partoutbillet.email</td>
+                            <td>@partoutbillet.telefon.ToString()</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" @onclick="@(() => GetPartout(@partoutbillet.partout_id))">Edit</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" @onclick="@(() => DeletePartout(@partoutbillet.partout_id))">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+@code {
+    private List<Partout> partout;
+
+    private Partout newPartout = new Partout();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        partout = await Http.GetFromJsonAsync<List<Partout>>("api/partout");
+    }
+
+    private async Task GetPartout(int id)
+    {
+        newPartout = await Http.GetFromJsonAsync<Partout>("api/partout/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitPartout()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Partout>("api/partout/create", newPartout);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Partout>("api/partout/edit", newPartout);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeletePartout(int id)
+    {
+        await Http.DeleteAsync("api/partout/delete" + id);
+        await OnInitializedAsync();
+    }
+}

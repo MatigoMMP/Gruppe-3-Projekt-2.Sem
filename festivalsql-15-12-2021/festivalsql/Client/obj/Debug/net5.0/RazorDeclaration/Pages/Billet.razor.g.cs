@@ -96,11 +96,11 @@ using festivalsql.Client.Shared;
 
     private void Partoutbillet()
         {
-            NavigationManager.NavigateTo("endagsbillet");
+            NavigationManager.NavigateTo("partoutbillet");
         }
     private void Endagsbillet()
         {
-            NavigationManager.NavigateTo("partoutbillet");
+            NavigationManager.NavigateTo("endagsbillet");
         }
 
 #line default

@@ -102,7 +102,7 @@ using festivalsql.Shared.Models;
       
     private void Navigate()
     {
-        NavigationManager.NavigateTo("/WhenLoggedIn");
+        NavigationManager.NavigateTo("/");
     }
 
 #line default

@@ -97,6 +97,50 @@ using festivalsql.Shared.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 26 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/Partoutbillet.razor"
+       
+    private List<Partout> partout;
+
+    private Partout newPartout = new Partout();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        partout = await Http.GetFromJsonAsync<List<Partout>>("api/partout");
+    }
+
+    private async Task GetPartout(int id)
+    {
+        newPartout = await Http.GetFromJsonAsync<Partout>("api/partout/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitPartout()
+    {
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<Partout>("api/partout/create", newPartout);
+            await OnInitializedAsync();
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<Partout>("api/partout/edit", newPartout);
+            edit = false;
+            await OnInitializedAsync();
+        }
+    }
+
+    private async Task DeletePartout(int id)
+    {
+        await Http.DeleteAsync("api/partout/delete" + id);
+        await OnInitializedAsync();
+    }
+
+#line default
+#line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

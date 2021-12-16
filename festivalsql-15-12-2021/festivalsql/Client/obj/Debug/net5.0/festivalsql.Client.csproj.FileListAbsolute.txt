@@ -2442,7 +2442,6 @@
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Frivillig.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListEndagsbillet.razor.g.cs
-/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListJobDetails.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListJobs.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListPartoutbillet.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ListShifts.razor.g.cs
@@ -2468,7 +2467,6 @@
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/Frivillig.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListEndagsbillet.razor.g.cs
-/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListJobDetails.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListJobs.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListPartoutbillet.razor.g.cs
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/ListShifts.razor.g.cs
