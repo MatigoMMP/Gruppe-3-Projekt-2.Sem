@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-ic9K1kG1ohp+DUQ7UvuaYu\/V\/OwrUIlVI8cYfLCh\/7w=",
+      "hash": "sha256-Sfk1IMlcazW1ZPiyGEAtFYWUNxsBAF3Jqr39W4t4wlc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -121,6 +121,10 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
+      "hash": "sha256-2HMquskQBFMSjKc1u8ouTJ4sw\/HgxnS9rIaHxI9200I=",
+      "url": "_framework\/MimeKit.dll"
+    },
+    {
       "hash": "sha256-DaOlZFZLqLCKPKhYGHn27t7oEBE9ksdDWNHzpNF6LS0=",
       "url": "_framework\/Npgsql.dll"
     },
@@ -129,8 +133,16 @@
       "url": "_framework\/Npgsql.EntityFrameworkCore.PostgreSQL.dll"
     },
     {
+      "hash": "sha256-9CuGCYVNgNf4HydjQFBKpegrvk1z0FCA\/vH8yiREtNU=",
+      "url": "_framework\/BouncyCastle.Crypto.dll"
+    },
+    {
       "hash": "sha256-3ET+mpR7F058YRj9YaLHOVXBqOW6iUxtIpeiKPYw4PA=",
       "url": "_framework\/System.IO.Pipelines.dll"
+    },
+    {
+      "hash": "sha256-06AjwCB7MrAqzsPlVzuOs8F6LFxb9ZG7IzUQlSTcAbY=",
+      "url": "_framework\/System.Security.Cryptography.Pkcs.dll"
     },
     {
       "hash": "sha256-7lPdvYmKNuvJJ5P\/jsxQikc2dmeGUVI9WaasePSuNFQ=",
@@ -821,19 +833,19 @@
       "url": "_framework\/dotnet.5.0.12.js"
     },
     {
-      "hash": "sha256-YvO9VcBjCaUVFe2ARR\/1cNpwC+ERayUT8XwpAaiSw8s=",
+      "hash": "sha256-6EuZVB9lHoIu\/uNMK5g8Nd8PME2XVQyTAUIlYLZuGQw=",
       "url": "_framework\/festivalsql.Shared.dll"
     },
     {
-      "hash": "sha256-ABc7Joo9b8q8CqEie2GWQ28G7WUkqSmqMf57aa3ISDg=",
+      "hash": "sha256-0YNjdMg64yX3zuhC5TOvMyfx7Q5iPUXHwisjwcclfaY=",
       "url": "_framework\/festivalsql.Shared.pdb"
     },
     {
-      "hash": "sha256-srK\/kwnTFkij3O\/WORwxm0QoBTMta3r2lCD09McO0WU=",
+      "hash": "sha256-hCIWkRXNFN6FUChmI9\/imqrhWoumLNTgmCdAoOQXCr4=",
       "url": "_framework\/festivalsql.Client.dll"
     },
     {
-      "hash": "sha256-\/shXO5pokiKzBAXBXqhCvQhyvGbc0o5kmouQq5lqcK0=",
+      "hash": "sha256-qFdc+zhj7zhfe3t45aQRRAW6Lh1rnrfnkLSncouvicM=",
       "url": "_framework\/festivalsql.Client.pdb"
     },
     {
@@ -957,6 +969,10 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
+      "hash": "sha256-ylO8RaH+KakF6oriavEy+vj1O5oMDwWTRhAIZH+415A=",
+      "url": "_framework\/MimeKit.dll.gz"
+    },
+    {
       "hash": "sha256-6Vrx24Gesqcf65YCqokW6gFqcZ\/2W+2AO7f+mkVSx2E=",
       "url": "_framework\/Npgsql.dll.gz"
     },
@@ -965,8 +981,16 @@
       "url": "_framework\/Npgsql.EntityFrameworkCore.PostgreSQL.dll.gz"
     },
     {
+      "hash": "sha256-zaJClgtmySN7qiywriIMuwtFR5oYT\/NopZAX+QIX1L8=",
+      "url": "_framework\/BouncyCastle.Crypto.dll.gz"
+    },
+    {
       "hash": "sha256-Oo2PR\/8iIaYz96jk5MaPhnVUyOhGz0xZyM2B1kdbT68=",
       "url": "_framework\/System.IO.Pipelines.dll.gz"
+    },
+    {
+      "hash": "sha256-OKXw9QWwvvbFsnsmYKxy4hvCGPFGjgkH6LRkUjpcd0Y=",
+      "url": "_framework\/System.Security.Cryptography.Pkcs.dll.gz"
     },
     {
       "hash": "sha256-3Es0XSXaxlcfFxw20ZlDYcbOuY9XZsHGHPASjnCJUvE=",
@@ -1657,7 +1681,7 @@
       "url": "_framework\/dotnet.5.0.12.js.gz"
     },
     {
-      "hash": "sha256-JCWy7LCJi867c0cip0dMvSZykkXmJb9cA7EmLLnGRnU=",
+      "hash": "sha256-qdVcEo2dd9qEcvveNgJt76LqJZPmde3pl63uVMk\/cQg=",
       "url": "_framework\/festivalsql.Shared.dll.gz"
     },
     {
@@ -1841,5 +1865,5 @@
       "url": "festivalsql.Client.bundle.scp.css"
     }
   ],
-  "version": "CraPdj3l"
+  "version": "lgfkfPci"
 };

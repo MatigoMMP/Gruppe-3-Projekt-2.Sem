@@ -266,3 +266,5 @@
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Server/obj/Debug/net5.0/ref/festivalsql.Server.dll
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Server/obj/Debug/net5.0/festivalsql.Server.pdb
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Server/obj/Debug/net5.0/festivalsql.Server.genruntimeconfig.cache
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Server/bin/Debug/net5.0/MimeKit.dll
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Server/bin/Debug/net5.0/BouncyCastle.Crypto.dll

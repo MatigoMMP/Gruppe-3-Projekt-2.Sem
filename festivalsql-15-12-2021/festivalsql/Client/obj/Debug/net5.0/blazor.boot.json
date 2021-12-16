@@ -36,9 +36,12 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-5kJP8qggA3O4rDolqMUS+gRcQic\/\/5alhTx9jHiXp9o=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-XdVfH1edFXMdfwiEgZKasAJgRMixaRUe7lzqmeJDJtw=",
+      "MimeKit.dll": "sha256-2HMquskQBFMSjKc1u8ouTJ4sw\/HgxnS9rIaHxI9200I=",
       "Npgsql.dll": "sha256-DaOlZFZLqLCKPKhYGHn27t7oEBE9ksdDWNHzpNF6LS0=",
       "Npgsql.EntityFrameworkCore.PostgreSQL.dll": "sha256-v4AiIiSuJOeIj0A\/QBfxGvY1SGdP\/P+g9mIY+QyTaEY=",
+      "BouncyCastle.Crypto.dll": "sha256-9CuGCYVNgNf4HydjQFBKpegrvk1z0FCA\/vH8yiREtNU=",
       "System.IO.Pipelines.dll": "sha256-3ET+mpR7F058YRj9YaLHOVXBqOW6iUxtIpeiKPYw4PA=",
+      "System.Security.Cryptography.Pkcs.dll": "sha256-06AjwCB7MrAqzsPlVzuOs8F6LFxb9ZG7IzUQlSTcAbY=",
       "Microsoft.CSharp.dll": "sha256-7lPdvYmKNuvJJ5P\/jsxQikc2dmeGUVI9WaasePSuNFQ=",
       "Microsoft.VisualBasic.Core.dll": "sha256-J7gHIxZfOy7emzL13bxVrkyZR8OWck+j2g0pzTZ9aec=",
       "Microsoft.VisualBasic.dll": "sha256-q4xhyzut7y4LjPL5inXgxslAK1zMYmQKSv0S49IbTSU=",
@@ -204,12 +207,12 @@
       "mscorlib.dll": "sha256-+dB3Q0YubUPF1oZDMVZn6ZCiRkzRomtLoq51T5FocJk=",
       "netstandard.dll": "sha256-dOHF0zANIyA4WS496iWrAkTuEFWSWrXJjZj2pQQHrMA=",
       "System.Private.CoreLib.dll": "sha256-C96+zv+mWW0XzMG520oRgAG1lHVY8xzWGc6oc6rFjws=",
-      "festivalsql.Shared.dll": "sha256-YvO9VcBjCaUVFe2ARR\/1cNpwC+ERayUT8XwpAaiSw8s=",
-      "festivalsql.Client.dll": "sha256-srK\/kwnTFkij3O\/WORwxm0QoBTMta3r2lCD09McO0WU="
+      "festivalsql.Shared.dll": "sha256-6EuZVB9lHoIu\/uNMK5g8Nd8PME2XVQyTAUIlYLZuGQw=",
+      "festivalsql.Client.dll": "sha256-hCIWkRXNFN6FUChmI9\/imqrhWoumLNTgmCdAoOQXCr4="
     },
     "lazyAssembly": null,
     "pdb": {
-      "festivalsql.Client.pdb": "sha256-\/shXO5pokiKzBAXBXqhCvQhyvGbc0o5kmouQq5lqcK0="
+      "festivalsql.Client.pdb": "sha256-qFdc+zhj7zhfe3t45aQRRAW6Lh1rnrfnkLSncouvicM="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ir9YCVnnk7popgsYUkvitfGA4WpkP1ydPh\/ENHnxGys=",

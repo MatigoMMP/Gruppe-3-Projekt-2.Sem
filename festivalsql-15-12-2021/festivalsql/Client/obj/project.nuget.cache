@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6Ft9snuG3de1HHujxjHcQtJRxIL9FrQ6GOSKaYoPZqx3EIaDxXVFVxFym/+PeY/nMZzQ3ToqeguInwa08re9gA==",
+  "dgSpecHash": "LtmMVVsXHrHOGl86Dz+Myu6iyGjwFfg9PhDVTmrt965xuUr+MG0yHI7fzjYydlaz+pGX0gAvMeTYYZTjM/ZeHA==",
   "success": true,
   "projectFilePath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/festivalsql.Client.csproj",
   "expectedPackageFiles": [
@@ -38,14 +38,19 @@
     "/Users/jisoo/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/microsoft.jsinterop/5.0.12/microsoft.jsinterop.5.0.12.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/microsoft.jsinterop.webassembly/5.0.12/microsoft.jsinterop.webassembly.5.0.12.nupkg.sha512",
+    "/Users/jisoo/.nuget/packages/mimekit/3.0.0/mimekit.3.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/npgsql/5.0.10/npgsql.5.0.10.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/npgsql.entityframeworkcore.postgresql/5.0.10/npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
+    "/Users/jisoo/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "/Users/jisoo/.nuget/packages/system.formats.asn1/5.0.0/system.formats.asn1.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "/Users/jisoo/.nuget/packages/system.security.cryptography.cng/5.0.0/system.security.cryptography.cng.5.0.0.nupkg.sha512",
+    "/Users/jisoo/.nuget/packages/system.security.cryptography.pkcs/5.0.0/system.security.cryptography.pkcs.5.0.0.nupkg.sha512",
     "/Users/jisoo/.nuget/packages/microsoft.netcore.app.runtime.browser-wasm/5.0.12/microsoft.netcore.app.runtime.browser-wasm.5.0.12.nupkg.sha512"
   ],
   "logs": []

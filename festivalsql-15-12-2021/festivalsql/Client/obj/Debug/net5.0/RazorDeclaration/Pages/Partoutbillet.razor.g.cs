@@ -98,7 +98,7 @@ using festivalsql.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/Partoutbillet.razor"
+#line 28 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/Pages/Partoutbillet.razor"
        
     private List<Partout> partout;
 
@@ -119,6 +119,7 @@ using festivalsql.Shared.Models;
 
     private async Task SubmitPartout()
     {
+        NavigationManager.NavigateTo("/");
         if (edit == false)
         {
             await Http.PostAsJsonAsync<Partout>("api/partout/create", newPartout);
@@ -130,6 +131,7 @@ using festivalsql.Shared.Models;
             edit = false;
             await OnInitializedAsync();
         }
+        await IJRuntime.InvokeVoidAsync("alert", "Tak for dit køb");
     }
 
     private async Task DeletePartout(int id)
@@ -141,6 +143,8 @@ using festivalsql.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime IJRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace festivalsql.Shared.Models
 
         public virtual DbSet<Partout> partout { get; set; }
 
-        public virtual DbSet<Endags> endags { get; set; } 
+        public virtual DbSet<Endags> endags { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

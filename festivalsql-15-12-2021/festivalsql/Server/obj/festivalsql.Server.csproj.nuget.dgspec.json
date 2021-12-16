@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -147,6 +151,10 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -213,6 +221,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

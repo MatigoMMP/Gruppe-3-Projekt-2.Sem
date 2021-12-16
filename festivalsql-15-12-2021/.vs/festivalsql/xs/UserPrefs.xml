@@ -1,14 +1,21 @@
 ﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Shared/Models/Partout.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Client/Pages/Partoutbillet.razor">
     <Files>
-      <File FileName="festivalsql/Shared/Models/Partout.cs" Line="15" Column="41" />
+      <File FileName="festivalsql/Client/Pages/Partoutbillet.razor" Line="60" Column="69" />
+      <File FileName="festivalsql/Client/Pages/Endagsbillet.razor" Line="45" Column="6" />
+      <File FileName="festivalsql/Client/Services/PartoutService.cs" Line="10" Column="1" />
+      <File FileName="festivalsql/Server/appsettings.json" Line="14" Column="30" />
+      <File FileName="festivalsql/Client/Services/Message.cs" Line="10" Column="56" />
+      <File FileName="festivalsql/Shared/Models/FestivalContext.cs" Line="15" Column="68" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="festivalsql" expanded="True">
             <Node name="festivalsql.Client" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Partoutbillet.razor" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
@@ -19,9 +26,7 @@
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="festivalsql.Shared" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Partout.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

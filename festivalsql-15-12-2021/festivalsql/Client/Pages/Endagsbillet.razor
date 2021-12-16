@@ -1,6 +1,9 @@
 ﻿@page "/endagsbillet"
 @using festivalsql.Shared.Models;
 @inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime IJRuntime
+
 
 <div class="billet_container">
     <div class="billet_submit">
@@ -43,10 +46,12 @@
 
     private async Task SubmitEndags()
     {
+        NavigationManager.NavigateTo("/");
         if (edit == false)
         {
             await Http.PostAsJsonAsync<Endags>("api/endags/create", newEndags);
             await OnInitializedAsync();
+
         }
         else
         {
@@ -54,6 +59,7 @@
             edit = false;
             await OnInitializedAsync();
         }
+        await IJRuntime.InvokeVoidAsync("alert", "Tak for dit køb");
     }
 
     private async Task DeleteEndags(int id)

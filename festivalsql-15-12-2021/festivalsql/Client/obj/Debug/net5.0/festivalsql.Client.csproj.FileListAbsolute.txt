@@ -2698,3 +2698,12 @@
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.pdb
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/serviceworkers/wwwroot/service-worker.js
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/service-worker-assets.js
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/MimeKit.dll.gz
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/BouncyCastle.Crypto.dll.gz
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/System.Security.Cryptography.Pkcs.dll.gz
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/MimeKit.dll
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/BouncyCastle.Crypto.dll
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/bin/Debug/net5.0/wwwroot/_framework/System.Security.Cryptography.Pkcs.dll
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/build-gz/KIYhEL7b.gz
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/build-gz/fNI+dkww.gz
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/Debug/net5.0/build-gz/69FTEQs5.gz
