@@ -11,6 +11,14 @@ namespace festivalsql.Server.Controllers
     {
         private readonly PartoutService _partoutService = new();
 
+        private readonly IEmailSender _emailSender;
+
+        public PartoutController(IEmailSender emailSender)
+        {
+            _emailSender = emailSender;
+        }
+
+
         [Route("api/partout")]
         [HttpGet]
         public IEnumerable<Partout> GetPartout()
@@ -31,6 +39,8 @@ namespace festivalsql.Server.Controllers
         {
             if (ModelState.IsValid)
             {
+                var message = new Message(new string[] { partout.email }, "Billet til miljøfest", "Tak for du købte en billet");
+                _emailSender.SendEmail(message);
                 _partoutService.AddPartout(partout);
             }
         }
