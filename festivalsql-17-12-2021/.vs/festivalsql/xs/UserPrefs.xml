@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="festivalsql" expanded="True">
+            <Node name="festivalsql.Client" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="festivalsql.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="festivalsql.Shared" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Message.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

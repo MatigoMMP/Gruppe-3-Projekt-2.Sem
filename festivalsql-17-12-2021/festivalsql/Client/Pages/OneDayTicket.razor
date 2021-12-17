@@ -1,0 +1,81 @@
+﻿@page "/endagsbillet"
+@using festivalsql.Shared.Models;
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime IJRuntime
+
+
+<div class="billet_container">
+    <div class="billet_submit">
+        <h4>Endagsbillet</h4>
+
+        <form>
+            <div class="form-group">
+                <label>Navn</label>
+                <input class="form-control col-sm-3" @bind="newOneDay.navn" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control col-sm-3" @bind="newOneDay.email" />
+            </div>
+            <div class="form-group">
+                <label>Telefon nr.</label>
+                <input class="form-control col-sm-3" @bind="newOneDay.telefon" />
+            </div>
+            <div class="form-group">
+                <label>Dato</label>
+                <select class="form-control col-sm-3" @bind="newOneDay.dato">
+                    <option>--Select--</option>
+                    <option>onsdag 1/6 2022</option>
+                    <option>torsdag 2/6 2022</option>
+                    <option>fredag 3/6 2022</option>
+                    <option>lørdag 4/6 2022</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" @onclick="SubmitEndags">Bestil</button>
+        </form>
+    </div>
+</div>
+
+@code {
+    private List<OneDay> oneDays;
+
+    private OneDay newOneDay = new OneDay();
+
+    private bool edit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        oneDays = await Http.GetFromJsonAsync<List<OneDay>>("api/endags");
+    }
+
+    private async Task GetEndags(int id)
+    {
+        newOneDay = await Http.GetFromJsonAsync<OneDay>("api/endags/detail/" + id);
+        edit = true;
+    }
+
+    private async Task SubmitEndags()
+    {
+        NavigationManager.NavigateTo("/");
+        if (edit == false)
+        {
+            await Http.PostAsJsonAsync<OneDay>("api/endags/create", newOneDay);
+            await OnInitializedAsync();
+
+        }
+        else
+        {
+            await Http.PutAsJsonAsync<OneDay>("api/endags/edit", newOneDay);
+            edit = false;
+            await OnInitializedAsync();
+        }
+        await IJRuntime.InvokeVoidAsync("alert", "Tak for din bestilling");
+    }
+
+    private async Task DeleteEndags(int id)
+    {
+        await Http.DeleteAsync("api/endags/delete" + id);
+        await OnInitializedAsync();
+    }
+}
