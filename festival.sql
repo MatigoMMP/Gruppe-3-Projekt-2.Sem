@@ -86,13 +86,32 @@ CREATE TABLE audit_log (
 CREATE TABLE artist (
     artist_id bigserial PRIMARY KEY,
     navn varchar(50) NOT NULL,
-    beskrivelse varchar(255)
+    beskrivelse varchar(255),
+    last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE optraeden (
     optraeden_id bigserial PRIMARY KEY,
     artist_id int REFERENCES artist (artist_id),
-    tidspunkt timestamp with time zone NOT NULL
+    tidspunkt timestamp with time zone NOT NULL,
+    last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE partout (
+    partout_id bigserial PRIMARY KEY,
+    navn varchar(50) NOT NULL,
+    email varchar(255) NOT NULL,
+    telefon int,
+    last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE endags (
+    endags_id bigserial PRIMARY KEY,
+    navn varchar(50) NOT NULL,
+    email varchar(255) NOT NULL,
+    telefon int,
+    dato varchar(50) NOT NULL,
+    last_update timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE OR REPLACE FUNCTION audit_bruger_data()
@@ -195,6 +214,30 @@ CREATE TRIGGER last_updated
 CREATE TRIGGER last_updated
     BEFORE UPDATE 
     ON public.vagt
+    FOR EACH ROW
+    EXECUTE FUNCTION public.last_updated();
+
+CREATE TRIGGER last_updated
+    BEFORE UPDATE 
+    ON public.artist
+    FOR EACH ROW
+    EXECUTE FUNCTION public.last_updated();
+
+CREATE TRIGGER last_updated
+    BEFORE UPDATE 
+    ON public.optraeden
+    FOR EACH ROW
+    EXECUTE FUNCTION public.last_updated();
+
+CREATE TRIGGER last_updated
+    BEFORE UPDATE 
+    ON public.partout
+    FOR EACH ROW
+    EXECUTE FUNCTION public.last_updated();
+
+CREATE TRIGGER last_updated
+    BEFORE UPDATE 
+    ON public.endags
     FOR EACH ROW
     EXECUTE FUNCTION public.last_updated();
 
