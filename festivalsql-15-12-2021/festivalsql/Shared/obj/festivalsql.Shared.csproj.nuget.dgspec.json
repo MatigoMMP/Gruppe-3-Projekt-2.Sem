@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jesper/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {}
+    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {}
   },
   "projects": {
-    "/Users/jesper/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
+    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jesper/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+        "projectUniqueName": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
         "projectName": "festivalsql.Shared",
-        "projectPath": "/Users/jesper/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
-        "packagesPath": "/Users/jesper/.nuget/packages/",
-        "outputPath": "/Users/jesper/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/obj/",
+        "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+        "packagesPath": "/Users/victorpascale/.nuget/packages/",
+        "outputPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jesper/.config/NuGet/NuGet.Config"
+          "/Users/victorpascale/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

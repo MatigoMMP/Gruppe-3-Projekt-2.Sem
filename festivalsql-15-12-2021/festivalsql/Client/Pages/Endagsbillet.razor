@@ -22,10 +22,21 @@
                 <label>Telefon nr.</label>
                 <input class="form-control col-sm-3" @bind="newEndags.telefon" />
             </div>
-            <button class="btn btn-primary" @onclick="SubmitEndags">Køb</button>
+            <div class="form-group">
+                <label>Dato</label>
+                <select class="form-control col-sm-3" @bind="newEndags.dato">
+                    <option>--Select--</option>
+                    <option>onsdag 1/6 2022</option>
+                    <option>torsdag 2/6 2022</option>
+                    <option>fredag 3/6 2022</option>
+                    <option>lørdag 4/6 2022</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" @onclick="SubmitEndags">Bestil</button>
         </form>
     </div>
 </div>
+
 @code {
     private List<Endags> endags;
 
@@ -59,7 +70,7 @@
             edit = false;
             await OnInitializedAsync();
         }
-        await IJRuntime.InvokeVoidAsync("alert", "Tak for dit køb");
+        await IJRuntime.InvokeVoidAsync("alert", "Tak for din bestilling");
     }
 
     private async Task DeleteEndags(int id)

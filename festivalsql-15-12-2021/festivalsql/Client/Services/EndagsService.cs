@@ -1,14 +1,23 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using festivalsql.Shared.Models;
 using System.Linq;
 using System.Collections.Generic;
 
 namespace festivalsql.Client.Services
 {
-    public class EndagsService
+    public class EndagsService : TicketService
     {
         private readonly FestivalContext _endags = new();
+
+        public EndagsService(EmailConfiguration emailConfig)
+        {
+            _emailConfig = emailConfig;
+        }
+
+        public EndagsService()
+        {
+
+        }
 
         public IEnumerable<Endags> GetAllEndags()
         {

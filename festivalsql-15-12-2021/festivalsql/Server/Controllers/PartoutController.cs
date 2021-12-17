@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using festivalsql.Client.Services;
 using festivalsql.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +15,6 @@ namespace festivalsql.Server.Controllers
         {
             _emailSender = emailSender;
         }
-
 
         [Route("api/partout")]
         [HttpGet]
@@ -39,7 +36,7 @@ namespace festivalsql.Server.Controllers
         {
             if (ModelState.IsValid)
             {
-                var message = new Message(new string[] { partout.email }, "Billet til miljøfest", "Tak for du købte en billet");
+                var message = new Message(new string[] { partout.email }, "Billet til miljøfest", $"Hej {partout.navn}. Tak fordi du bestilte en partoutbillet");
                 _emailSender.SendEmail(message);
                 _partoutService.AddPartout(partout);
             }

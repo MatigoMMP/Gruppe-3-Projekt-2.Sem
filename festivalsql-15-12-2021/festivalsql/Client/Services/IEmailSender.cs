@@ -1,5 +1,4 @@
-﻿using System;
-namespace festivalsql.Client.Services
+﻿namespace festivalsql.Client.Services
 {
     public interface IEmailSender
     {

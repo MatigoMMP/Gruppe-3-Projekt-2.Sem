@@ -21,7 +21,7 @@
                 <label>Telefon nr.</label>
                 <input class="form-control col-sm-3" @bind="newPartout.telefon" />
             </div>
-            <button class="btn btn-primary" @onclick="SubmitPartout">Køb</button>
+            <button class="btn btn-primary" @onclick="SubmitPartout">Bestil</button>
         </form>
     </div>
 </div>
@@ -59,7 +59,7 @@
             edit = false;
             await OnInitializedAsync();
         }
-        await IJRuntime.InvokeVoidAsync("alert", "Tak for dit køb");
+        await IJRuntime.InvokeVoidAsync("alert", "Tak for din bestilling");
     }
 
     private async Task DeletePartout(int id)

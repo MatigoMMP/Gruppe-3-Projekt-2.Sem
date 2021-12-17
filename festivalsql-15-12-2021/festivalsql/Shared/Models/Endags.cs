@@ -13,5 +13,7 @@ namespace festivalsql.Shared.Models
         public string email { get; set; }
 
         public int telefon { get; set; }
+
+        public string dato { get; set; }
     }
 }

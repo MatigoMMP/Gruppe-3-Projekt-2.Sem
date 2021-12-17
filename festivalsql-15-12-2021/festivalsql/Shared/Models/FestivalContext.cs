@@ -1,6 +1,4 @@
-﻿using System;
-using festivalsql.Shared.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace festivalsql.Shared.Models
 {
@@ -26,8 +24,8 @@ namespace festivalsql.Shared.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql(@"Server = 127.0.0.1; Port = 5432; Database = Testdb; User Id=postgres; Password=1234; CommandTimeout = 20");
-                //optionsBuilder.UseNpgsql(@"Server=miljoefest.postgres.database.azure.com;Database=festival;Port=5432;User Id=victorp;Password=zajpIb-meqtom-gerwi5;Ssl Mode=Require;");
+                //optionsBuilder.UseNpgsql(@"Server = 127.0.0.1; Port = 5432; Database = Testdb; User Id=postgres; Password=1234; CommandTimeout = 20");
+                optionsBuilder.UseNpgsql(@"Server=miljoefest.postgres.database.azure.com;Database=festival;Port=5432;User Id=victorp;Password=zajpIb-meqtom-gerwi5;Ssl Mode=Require;");
             }
         }
     }

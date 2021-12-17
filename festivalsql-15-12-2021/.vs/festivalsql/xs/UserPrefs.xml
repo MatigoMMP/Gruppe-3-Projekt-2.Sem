@@ -1,25 +1,21 @@
 ﻿<Properties StartupConfiguration="{EEA9C862-9A60-4153-B493-CCEBC8E0C36C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Client/Services/PartoutService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="festivalsql/Client/Pages/Endagsbillet.razor">
     <Files>
-      <File FileName="festivalsql/Client/Services/PartoutService.cs" Line="27" Column="10" />
-      <File FileName="festivalsql/Client/Services/Message.cs" />
-      <File FileName="festivalsql/Server/Controllers/PartoutController.cs" />
-      <File FileName="festivalsql/Client/Pages/Partoutbillet.razor" />
-      <File FileName="festivalsql/Shared/Models/Partout.cs" />
-      <File FileName="festivalsql/Server/Program.cs" />
+      <File FileName="festivalsql/Client/Services/TicketService.cs" Line="3" Column="15" />
+      <File FileName="festivalsql/Client/Pages/Endagsbillet.razor" Line="32" Column="53" />
+      <File FileName="festivalsql/Server/Controllers/EndagsController.cs" Line="39" Column="140" />
+      <File FileName="festivalsql/Server/Controllers/PartoutController.cs" Line="39" Column="162" />
+      <File FileName="festivalsql/Client/Pages/Partoutbillet.razor" Line="24" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="festivalsql" expanded="True">
             <Node name="festivalsql.Client" expanded="True">
-              <Node name="Pages" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="Shared" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="icon-512.png" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Endagsbillet.razor" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
             <Node name="festivalsql.Server" expanded="True">
               <Node name="Controllers" expanded="True" />
@@ -32,7 +28,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.ItemProperties.festivalsql.Server PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
