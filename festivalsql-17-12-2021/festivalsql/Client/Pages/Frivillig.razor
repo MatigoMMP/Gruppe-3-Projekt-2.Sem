@@ -1,4 +1,6 @@
 ﻿@page "/frivillig"
+@inject NavigationManager NavigationManager
+@inject IJSRuntime IJRuntime
 
 @* FRIVILLIG CONTAINER *@
 <div class="frivillig_container">
@@ -10,7 +12,7 @@
         <h2 style="font-size: 25px;"> Uden dig, uden Miljøfest så mere simpelt bliver det ikke </h2>
     </div>
     <div>
-        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        En festival er ingenting med dens medhjælper og uden dig, og dine kompetencer, ville der simpelthen ikke være nogen Miljøfest til at genskabe det der går tabt mellem politik og me-to movement.
     </div>
 
     @* BODY *@
@@ -20,7 +22,8 @@
             Frivillig i en madbod
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Uden mad vil en festival aldrig kunne til tilfredstille sine sultne gæster og vi vil have præcis dig med til, så gæster kan gå mætte hjem eller tilbage til deres telt, hvem ved.
+            Så er du en som har erfaring eller gerne vil have erfaring med madlavning eller bare madservering så er du kommet til det rette sted.
         </div>
     </div>
     <br>
@@ -29,7 +32,8 @@
             Frivillig i en bar
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Bajer eller cocktails skal ikke gå tabt hos Miljøfest, fordi hvem kommer også til en festival og siger til sig selv, jeg skal have noget vand.
+            Vil du være frivillig på en af vores mange barer, ser vi gerne at du er minimum 18 år og har erfaring indenfor nattelivet og i ølskænkning, fordi der ingen der gider at have en øl vores 70% af øllen er skum.
         </div>
     </div>
     <br>
@@ -38,7 +42,8 @@
             Frivillig som opsætter/opryder
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Dette foregår før og efter festivalen. Det kræver en masse kræfter til at sætte en festival op med de mange scener, barer, madboder og hytter. Så er du typen der har angst, fordi du ikke kommer til at tage i fitness under Miljøfest, så har vi svaret.
+            Med få jernrør og træpaller så er du klar til at deadlift 300 kg efter Miljøfest er slut.
         </div>
     </div>
     <br>
@@ -47,7 +52,7 @@
             Fællesskab
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Det skal ikke være blod, sved og tårer når man arbejder, der skal være smil og latter blandt vores kommende nye kollegarer. Derfor er en af vores vigtigeste prioteter, er at sørger for at du befinder dig et miljø, haha! get it miljø, hvor at du hverdag møder ind, og siger til dig selv "Hell yeah!" og ikke "Hell no!".
         </div>
     </div>
     <br>
@@ -56,7 +61,7 @@
             Fordele som frivillig
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Jo flere fuldførte vagter, jo flere kuponer får du, nemmerer bliver det ikke. Kuponerne kan du bruger på mad og drikkevarer. Udover gratis mad og driks medfølges der gratis ophold på festivalen hele ugen og efter Miljøfest er slut, inviterer vi dig til en privat afterparty med alle de kommende artister.
         </div>
     </div>
     <br>
@@ -65,7 +70,7 @@
             Vagter og opgaver
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            Så snart du får godkendt din ansøgning får du en mail om din midlertidige login. Dit login bruger du til at vælge din egne vagter og får en oversigt over hvilke opgaver vagten har.
         </div>
     </div>
     <br>
@@ -74,11 +79,28 @@
             Depositum
         </div>
         <div>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            For at sikre at du kommer til dine vagter og laver dine opgaver, så kræver vi at du betaler et lille beløb på 250 kr eller hvad der svarer til en endagsbillet. Du får selvfølge dine penge tilbage efter når Miljøfest er slut.
         </div>
+    </div>
+    <br>
+    <div>
+        <div style="font: bold; font-size: 20px">
+            Take one, action!
+        </div>
+        <div>
+            Lyder det nået for dig så tag action og tryk på knappen unden og skriv til at os.
+        </div>
+        <br>
+        <button class="login_button" @onclick="Ansøg"> ANSØG </button>
     </div>
 </div>
 </div>
 
 
+@code {
 
+    private void Ansøg()
+    {
+        NavigationManager.NavigateTo("omOs");
+    }
+}

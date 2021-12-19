@@ -394,7 +394,7 @@ app {
         padding: 20px;
     }
         .billet_partout {
-            background-image: url(../images/billet/partout.jpeg);
+            background-image: url(../images/billet/p.png);
             background-size: cover;
             background-position: center;
             font-size: 50px;
@@ -410,7 +410,7 @@ app {
                 opacity: 50%;
             }
         .billet_endags {
-            background-image: url(../images/billet/partout.jpeg);
+            background-image: url(../images/billet/e.png);
             background-size: cover;
             background-position: center;
             font-size: 50px;
@@ -810,9 +810,3 @@ app {
 table, tr, th, td {
     color: white;
 }
-
-/********************************************/
-
-/********************************************/
-/*             BILLETTER layout             */
-/********************************************/

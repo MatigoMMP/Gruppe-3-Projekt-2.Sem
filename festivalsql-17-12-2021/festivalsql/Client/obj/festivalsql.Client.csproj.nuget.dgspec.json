@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/festivalsql.Client.csproj": {}
+    "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/festivalsql.Client.csproj": {}
   },
   "projects": {
-    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/festivalsql.Client.csproj": {
+    "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/festivalsql.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/festivalsql.Client.csproj",
+        "projectUniqueName": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/festivalsql.Client.csproj",
         "projectName": "festivalsql.Client",
-        "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/festivalsql.Client.csproj",
-        "packagesPath": "/Users/victorpascale/.nuget/packages/",
-        "outputPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Client/obj/",
+        "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/festivalsql.Client.csproj",
+        "packagesPath": "/Users/jisoo/.nuget/packages/",
+        "outputPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/victorpascale/.config/NuGet/NuGet.Config"
+          "/Users/jisoo/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
-                "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj"
+              "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
+                "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/festivalsql.Shared.csproj"
               }
             }
           }
@@ -87,7 +87,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.13, 5.0.13]"
             }
           ],
           "frameworkReferences": {
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -104,17 +104,17 @@
         }
       }
     },
-    "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
+    "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/festivalsql.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+        "projectUniqueName": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
         "projectName": "festivalsql.Shared",
-        "projectPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
-        "packagesPath": "/Users/victorpascale/.nuget/packages/",
-        "outputPath": "/Users/victorpascale/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-15-12-2021/festivalsql/Shared/obj/",
+        "projectPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/festivalsql.Shared.csproj",
+        "packagesPath": "/Users/jisoo/.nuget/packages/",
+        "outputPath": "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/victorpascale/.config/NuGet/NuGet.Config"
+          "/Users/jisoo/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -172,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }
