@@ -96,15 +96,8 @@ using Microsoft.EntityFrameworkCore;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/Pages/Login.razor"
-using festivalsql.Shared.Models;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
-    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/koordinator")]
+    public partial class Koordinator : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,19 +105,27 @@ using festivalsql.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/Pages/Login.razor"
-      
-    private void Navigate()
+#line 15 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/Pages/Koordinator.razor"
+       
+    private void ListeVagter()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("listshifts");
     }
-    private void KoordinatorSide()
+    private void ListeOpgaver()
     {
-        NavigationManager.NavigateTo("koordinator");
+        NavigationManager.NavigateTo("listjobs");
     }
-    private void FrivilligSide()
+    private void ListePartout()
     {
-        NavigationManager.NavigateTo("frivilligSide");
+        NavigationManager.NavigateTo("listpartoutbillet");
+    }
+    private void ListeEndags()
+    {
+        NavigationManager.NavigateTo("listendagsbillet");
+    }
+    private void ListeFrivillig()
+    {
+        NavigationManager.NavigateTo("listusers");
     }
 
 #line default
@@ -132,7 +133,6 @@ using festivalsql.Shared.Models;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime IJRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

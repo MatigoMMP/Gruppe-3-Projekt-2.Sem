@@ -20,7 +20,8 @@
                 <input type="submit" class="login_button" value="Login" @onclick="Navigate">
                 <input type="reset" class="login_button" value="Nulstil">
 
-                @*<button class="login_button" @onclick="Navigate">Login</button>*@
+                <button class="login_button" @onclick="KoordinatorSide">Koordinator</button>
+                <button class="login_button" @onclick="FrivilligSide">Frivillig</button>
             </div>
         </form>
     </div>
@@ -34,5 +35,13 @@
     private void Navigate()
     {
         NavigationManager.NavigateTo("/");
+    }
+    private void KoordinatorSide()
+    {
+        NavigationManager.NavigateTo("koordinator");
+    }
+    private void FrivilligSide()
+    {
+        NavigationManager.NavigateTo("frivilligSide");
     }
 }

@@ -4816,3 +4816,7 @@
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/festivalsql.Client.pdb
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/serviceworkers/wwwroot/service-worker.js
 /Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/service-worker-assets.js
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/FrivilligeSide.razor.g.cs
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Koordinator.razor.g.cs
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/FrivilligeSide.razor.g.cs
+/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/obj/Debug/net5.0/Razor/Pages/Koordinator.razor.g.cs

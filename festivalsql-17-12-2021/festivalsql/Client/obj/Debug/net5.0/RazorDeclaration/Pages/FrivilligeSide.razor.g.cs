@@ -96,43 +96,16 @@ using Microsoft.EntityFrameworkCore;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/Pages/Login.razor"
-using festivalsql.Shared.Models;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
-    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/frivilligSide")]
+    public partial class FrivilligeSide : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 34 "/Users/jisoo/Documents/GitHub/Gruppe-3-Projekt-2.Sem/festivalsql-17-12-2021/festivalsql/Client/Pages/Login.razor"
-      
-    private void Navigate()
-    {
-        NavigationManager.NavigateTo("/");
-    }
-    private void KoordinatorSide()
-    {
-        NavigationManager.NavigateTo("koordinator");
-    }
-    private void FrivilligSide()
-    {
-        NavigationManager.NavigateTo("frivilligSide");
-    }
-
-#line default
-#line hidden
-#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime IJRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

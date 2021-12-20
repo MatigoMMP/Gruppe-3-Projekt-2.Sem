@@ -810,3 +810,72 @@ app {
 table, tr, th, td {
     color: white;
 }
+/********************************************/
+
+/********************************************/
+/*           KOORDINATOR layout             */
+/********************************************/
+.koor_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    .koor_body {
+        display: inline-block;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+        .koor_button {
+            background-color: lightgreen;
+            color: black;
+            font-size: 40px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            transition: 1s;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+            .koor_button:hover {
+                background-color: green;
+                color: white;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            .koor_button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 1s;
+            }
+
+                .koor_button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+            .koor_button:hover span {
+                padding-right: 25px;
+                color: white;
+            }
+
+                .koor_button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+/********************************************/
+
+/********************************************/
+/*        MIN FRIVILLIG SIDE layout         */
+/********************************************/
+.minFriSide_container {
+    padding: 20px;
+    color: white;
+    background-color: darkslategrey;
+}
+    

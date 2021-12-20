@@ -209,11 +209,11 @@
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
       "festivalsql.Shared.dll": "sha256-SRNpyu+qk\/plFiW8\/WtDFAT+XllGe+LaTqwYM2z1B74=",
-      "festivalsql.Client.dll": "sha256-G\/5eRKSqKxb4nVrwcHStP+syI3sRcyBf8iAbrNhIkIg="
+      "festivalsql.Client.dll": "sha256-DPLn3ri2bkyKA2a2vZkpArb7KngE9jxrXZJrTAi9V2U="
     },
     "lazyAssembly": null,
     "pdb": {
-      "festivalsql.Client.pdb": "sha256-6aQmgviLSMfzYBvQEbwSznT5ojirMz4KCV2ftdeMb9I="
+      "festivalsql.Client.pdb": "sha256-x3THQaYoKpQHOby3lijOpPnYWukZrCMlP4\/5nKTv++k="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

@@ -1,0 +1,37 @@
+﻿@page "/koordinator"
+@inject NavigationManager NavigationManager
+@inject IJSRuntime IJRuntime
+
+<div class="koor_container">
+    <div><h1>Koordinator side</h1></div>
+    <div class="koor_body">
+        <div><button class="koor_button" @onclick="ListeVagter"><span>Vagter</span></button></div>
+        <div><button class="koor_button" @onclick="ListeOpgaver"><span>Opgaver</span></button></div>
+        <div><button class="koor_button" @onclick="ListePartout"><span>Partout</span></button></div>
+        <div><button class="koor_button" @onclick="ListeEndags"><span>Endags</span></button></div>
+        <div><button class="koor_button" @onclick="ListeFrivillig"><span>Frivillig</span></button></div>
+    </div>
+</div>
+
+@code {
+    private void ListeVagter()
+    {
+        NavigationManager.NavigateTo("listshifts");
+    }
+    private void ListeOpgaver()
+    {
+        NavigationManager.NavigateTo("listjobs");
+    }
+    private void ListePartout()
+    {
+        NavigationManager.NavigateTo("listpartoutbillet");
+    }
+    private void ListeEndags()
+    {
+        NavigationManager.NavigateTo("listendagsbillet");
+    }
+    private void ListeFrivillig()
+    {
+        NavigationManager.NavigateTo("listusers");
+    }
+}

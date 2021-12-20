@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-dwd6mprw1ee1Ok4swuUeHt6H+IQ4psZPtzzvYVvgw3U=",
+      "hash": "sha256-Gt21wM9PQqWVEnH9Iviwn\/afpWXHuplpkE3LypXFDcw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -845,11 +845,11 @@
       "url": "_framework\/festivalsql.Shared.pdb"
     },
     {
-      "hash": "sha256-G\/5eRKSqKxb4nVrwcHStP+syI3sRcyBf8iAbrNhIkIg=",
+      "hash": "sha256-DPLn3ri2bkyKA2a2vZkpArb7KngE9jxrXZJrTAi9V2U=",
       "url": "_framework\/festivalsql.Client.dll"
     },
     {
-      "hash": "sha256-6aQmgviLSMfzYBvQEbwSznT5ojirMz4KCV2ftdeMb9I=",
+      "hash": "sha256-x3THQaYoKpQHOby3lijOpPnYWukZrCMlP4\/5nKTv++k=",
       "url": "_framework\/festivalsql.Client.pdb"
     },
     {
@@ -1701,7 +1701,7 @@
       "url": "css\/.DS_Store"
     },
     {
-      "hash": "sha256-fpy9FugbrOLeI8OZNyNdZ0eyDwHUF81FlLuLHaZXhFQ=",
+      "hash": "sha256-ZQ7bZXjq6uixVdIvj03nMZsyaoNHEKgbrv0AylPgO6Q=",
       "url": "css\/app.css"
     },
     {
@@ -1885,5 +1885,5 @@
       "url": "festivalsql.Client.bundle.scp.css"
     }
   ],
-  "version": "csJkKJKL"
+  "version": "+L\/f5iSD"
 };
