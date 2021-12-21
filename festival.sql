@@ -348,3 +348,18 @@ CREATE OR REPLACE VIEW audit_bruger_data AS
     SELECT log_id, event_type.event_type, bruger, timestamp
     FROM audit_log JOIN event_type
     ON audit_log.event_type = event_type.event_id;
+
+-- Oprettelse og tildelelse af read_access-rolle
+CREATE ROLE festival_read_access;
+
+GRANT CONNECT ON DATABASE festival TO festival_read_access;
+
+GRANT USAGE ON SCHEMA public TO festival_read_access;
+GRANT SELECT ON vagt TO festival_read_access;
+GRANT SELECT ON opgave TO festival_read_access;
+GRANT SELECT ON opgavedetalje TO festival_read_access;
+GRANT SELECT ON placering TO festival_read_access;
+GRANT SELECT ON status TO festival_read_access;
+
+CREATE USER festival_read_user WITH PASSWORD 'festival2022';
+GRANT festival_read_access TO festival_read_user;
