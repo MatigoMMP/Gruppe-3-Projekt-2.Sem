@@ -208,13 +208,13 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
-      "festivalsql.Shared.dll": "sha256-SRNpyu+qk\/plFiW8\/WtDFAT+XllGe+LaTqwYM2z1B74=",
-      "festivalsql.Client.dll": "sha256-DPLn3ri2bkyKA2a2vZkpArb7KngE9jxrXZJrTAi9V2U="
+      "festivalsql.Shared.dll": "sha256-s\/zZSfSTKZeODOg8+GL+rKhQTz1We8\/kBl36BLdHMK0=",
+      "festivalsql.Client.dll": "sha256-9bApF3DcLKC0Sc6GSApvgAg9TQ8vBEpBxiuCuKGK0+w="
     },
     "lazyAssembly": null,
     "pdb": {
-      "festivalsql.Shared.pdb": "sha256-FXgdW0E9EA2TzvIgGcHn8KBj9onvPvApEQNioI7qyCY=",
-      "festivalsql.Client.pdb": "sha256-x3THQaYoKpQHOby3lijOpPnYWukZrCMlP4\/5nKTv++k="
+      "festivalsql.Shared.pdb": "sha256-E9DRFV78NZzhaMp\/vLSlzY\/Vx9XUF20IM0Y+yo+fSwk=",
+      "festivalsql.Client.pdb": "sha256-AMmKCaQx2EX4XAnLiJUV5nmZJTVEIeN50Pq+KiF9kUE="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

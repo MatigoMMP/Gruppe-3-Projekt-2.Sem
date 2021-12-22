@@ -24,8 +24,11 @@ namespace festivalsql.Shared.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
+                // connection string lokalt
                 //optionsBuilder.UseNpgsql(@"Server = 127.0.0.1; Port = 5432; Database = Testdb; User Id=postgres; Password=1234; CommandTimeout = 20");
-                optionsBuilder.UseNpgsql(@"Server=miljoefest.postgres.database.azure.com;Database=festival;Port=5432;User Id=victorp;Password=zajpIb-meqtom-gerwi5;Ssl Mode=Require;");
+
+                // connection string på cloud
+                optionsBuilder.UseNpgsql(@"Server=gruppe3festival.postgres.database.azure.com;Database=festival;Port=5432;User Id=gruppe3;Password=jesperSEJ123;Ssl Mode=Require;");
             }
         }
     }
